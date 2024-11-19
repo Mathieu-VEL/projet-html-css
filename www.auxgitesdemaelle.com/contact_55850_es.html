@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.auxgitesdemaelle.com/contact_55850_es.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 11:35:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="content-language" content="es">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maison &quot;C&ocirc;t&eacute; Ouest&quot; maison avec terrasse, gu&eacute;rande centre Gu&eacute;rande - Contacto</title>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta property="og:site_name" content="Auxgitesdemaelle.com">
+<meta property="og:type" content="place">
+<meta property="place:location:latitude" content="47.326483">
+<meta property="place:location:longitude" content="-2.436734">
+<meta property="og:url" content="contact_55850_es.html">
+<meta property="og:title" content="Maison &quot;Côté Ouest&quot; maison avec terrasse, guérande centre">
+<meta property="og:image" content="../www.cybevasion.fr/gites/france/44/55850_711171_21.jpg">
+
+	<link href="style_color_2f9f8.css?202311171145" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../www.cybevasion.fr/jquery/jquery.intlTelInput.css">
+	<link href="../www.cybevasion.fr/javascript/litepicker/litepicker_cyb.css" rel="stylesheet" type="text/css">
+	<link href="../www.cybevasion.fr/css/css_litepicker_site.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../www.cybevasion.fr/javascript/litepicker/litepicker.js"></script>
+	<script type="text/javascript">
+		// Permet de savoir si une demande peut être effectuée selon les dates d'arrivée/départ renseignées
+		function is_dates_dispo(){
+			// const dt1 = $('#date_arrivee').datepicker('getDate');
+			// const dt2 = $('#date_depart').datepicker('getDate');
+
+			var dt1 = tab_datepickers['date_arrivee_dbl_fiche'].getStartDate().dateInstance.getTime();
+			var dt2 = tab_datepickers['date_arrivee_dbl_fiche'].getEndDate().dateInstance.getTime();
+
+			var dt_tmp = new Date(dt1); // copie
+
+			if(typeof tab_dates_detail == 'undefined'){
+				return true;
+			}
+
+			var i = 0;
+			while(dt_tmp < dt2){
+				if(i>90){
+					// sécurité
+					break;
+				}
+
+				var date_sql = dt_tmp.getFullYear() + '-' + ('0'+(dt_tmp.getMonth() + 1)).slice(-2) + '-' + ('0'+dt_tmp.getDate()).slice(-2);
+
+				if(tab_dates_detail.hasOwnProperty(date_sql)){
+					var tab_details = tab_dates_detail[date_sql].split('|');
+					
+					if($.inArray('unavailable', tab_details)>=0){
+						return false;
+					}
+				} else {
+					// si le tableau tab_dates_detail n'a pas la date demandée, inutile d'en vérifier d'autres, on considère que la demande est valide
+					return true;
+				}
+
+				dt_tmp.setDate(dt_tmp.getDate() + 1);
+				i++;
+			}
+
+			return true;
+		}
+		function verif_form(){
+			if(document.getElementById('nom').value=='' || document.getElementById('email').value=='' || document.getElementById('telephone').value=='' || document.getElementById('date_arrivee').value=='' || document.getElementById('date_depart').value=='' || document.getElementById('nb_personnes').value=='' || document.getElementById('message').value==''){
+				alert('Tous les champs sont obligatoires !');
+			}else{
+				var filter = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+				if (!filter.test(document.getElementById('email').value)) {
+					alert('Votre adresse e-mail n\'est pas valide !');
+				}else{
+					if(is_dates_dispo()){
+						document.getElementById('form_contact').submit();
+					} else {
+						alert('Ces dates ne sont pas disponibles.'+"\r\n"+'Veuillez saisir d\'autres dates pour pouvoir envoyer votre demande.');
+					}
+				}
+			}
+		}
+	</script>
+	<script> </script></head>
+<body class="ann_avec_planning">
+	<style>.flag_svg, .logo_partage { max-width: 64px; }</style><div class="header_site"><div class="header_site_content"><div id="btn_menu"><span></span><span></span><span></span><span></span></div><div class="bloc_title"><h1 class="zoomOutIn"><a href="accueil_55850_es.html" title="Inicio">Maison &quot;C&ocirc;t&eacute; Ouest&quot; maison avec terrasse, gu&eacute;rande centre</a></h1> <div class="labels"><img src="https://www.cybevasion.fr/lib3/svg/labels/meubletourisme_22.svg" title="Meubl&eacute; de tourisme 2 &eacute;toiles" align="absmiddle" height="32"> <img src="https://www.cybevasion.fr/lib3/svg/labels/gitesfrance_5_5.svg" title="G&icirc;tes de France 3 &eacute;pis" align="absmiddle" height="32"> </div></div><div class="bloc_flags"><a href="contact_55850.html" class="conteneur_flag" rel="alternate" hreflang="fr"><img src="https://www.cybevasion.fr/lib3/drapeaux3/fr.svg" title="Fran&ccedil;ais" class="flag_svg"></a><a href="contact_55850_en.html" class="conteneur_flag" rel="alternate" hreflang="en"><img src="https://www.cybevasion.fr/lib3/drapeaux3/en.svg" title="English" class="flag_svg"></a><a href="contact_55850_de.html" class="conteneur_flag" rel="alternate" hreflang="de"><img src="https://www.cybevasion.fr/lib3/drapeaux3/de.svg" title="Deutsch" class="flag_svg"></a><span class="conteneur_flag"><img src="https://www.cybevasion.fr/lib3/drapeaux3/es.svg" title="Espa&ntilde;ol" class="flag_svg"></span><a href="contact_55850_it.html" class="conteneur_flag" rel="alternate" hreflang="it"><img src="https://www.cybevasion.fr/lib3/drapeaux3/it.svg" title="Italiano" class="flag_svg"></a><a href="contact_55850_nl.html" class="conteneur_flag" rel="alternate" hreflang="nl"><img src="https://www.cybevasion.fr/lib3/drapeaux3/nl.svg" title="Nederlands" class="flag_svg"></a></div></div></div>	<div class="menu_site">
+	<div class="menu_site_content">
+		<div class="bloc-partage"><div class="bloc-visible" onclick="$('.togglePartage').toggleClass('togglePartage_disp');" style="cursor: pointer;"><svg class="logo_partage" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 32 32" fill="#929292"><path d="M22.09,9.07,10.81,14.71A5,5,0,0,1,11,16a4.74,4.74,0,0,1-.32,1.69l8,4.91A5,5,0,1,1,17.33,26a5.08,5.08,0,0,1,.32-1.7l-8-4.9a5,5,0,1,1,.27-6.47L21.19,7.29A5,5,0,0,1,21,6a5,5,0,1,1,5,5A5,5,0,0,1,22.09,9.07Z"></path></svg><span>Compartir</span></div><div class="togglePartage"><div class="listePartage lienPartage"><a href="#" onclick="var r = copyToClipboard_all('lienPage');if(r){var this_ = $(this).find('.btn_copier_lien');this_.html('Enlace copiado!');setTimeout(function(){$(this_).html('Copiar enlace');}, 3000);}return false;"><img src="couleur/lib/link.svg" width="32" style="height: 100%;"><span id="lienPage" style="display: none;">https://www.auxgitesdemaelle.com/contact_55850_es.html</span><span class="btn_copier_lien">Copiar enlace</span></a></div><div class="listePartage lienPartage"><a href="cdn-cgi/l/email-protection.html#9ba4eff4a6bde8eef9f1fef8efa6d6faf2e8f4f5bea9abbea9a9d8bed8a8bed9afefbed8a8bedaa2bea9abd4eefee8efbea9a9bea9abf6faf2e8f4f5bea9abfaedfef8bea9abeffee9e9fae8e8febea9d8bea9abfceebed8a8bedaa2e9faf5fffebea9abf8fef5efe9febdf9f4ffe2a6d6faf2e8f4f5bea9abbea9a9d8bed8a8bed9afefbed8a8bedaa2bea9abd4eefee8efbea9a9bea9abf6faf2e8f4f5bea9abfaedfef8bea9abeffee9e9fae8e8febea9d8bea9abfceebed8a8bedaa2e9faf5fffebea9abf8fef5efe9febeabdfbeabdaf3efefebe8bea8dabea9ddbea9ddecececb5faeee3fcf2effee8fffef6fafef7f7feb5f8f4f6bea9ddf8f4f5effaf8efc4aeaea3aeabc4fee8b5f3eff6f7beabdfbeabda"><svg class="logos_partage" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="5 957 90 90" fill="#929292"><path d="m 16,974.36218 c -3.32401,0 -6,2.67599 -6,6 l 0,44.00002 c 0,3.324 2.67599,6 6,6 l 68,0 c 3.32401,0 6,-2.676 6,-6 l 0,-44.00002 c 0,-3.32401 -2.67599,-6 -6,-6 l -68,0 z m 4.75,8.96875 a 2.0002,2.0002 0 0 1 1.65625,0.59375 l 24.75,24.28132 c 1.54842,1.5195 4.07236,1.5198 5.625,0 l 24.8125,-24.28132 a 2.0002,2.0002 0 1 1 2.8125,2.84375 l -16.21875,15.90627 16.1875,15.2188 a 2.0005492,2.0005492 0 0 1 -2.75,2.9062 l -16.28125,-15.3437 -5.75,5.625 c -3.09988,3.0343 -8.15184,3.0403 -11.25,0 l -5.6875,-5.5938 -16.28125,15.3125 a 2.0005492,2.0005492 0 0 1 -2.75,-2.9062 l 16.15625,-15.2188 -16.1875,-15.90626 a 2.0002,2.0002 0 0 1 1.15625,-3.4375 z"></path></svg><span>Compartir por correo electrónico</span></a></div><div class="listePartage lienPartage"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.auxgitesdemaelle.com%2Fcontact_55850_es.html" onclick="javascript:openWindow(this.href, '', 600, 600); return false;"><img src="couleur/lib/facebook.svg" style="width: 32px;" alt="Compartir en Facebook"/><span>Compartir en Facebook</span></a></div></div></div>		<div class="menu">
+		<a class="item_menu" href="accueil_55850_es.html">Inicio</a><a class="item_menu" href="photos_55850_es.html">Fotografía</a><a class="item_menu" href="tarifs_55850_es.html">Alojamiento, Precios & Planning</a><a class="item_menu" href="plan_55850_es.html">Mapa</a><a class="item_menu menu_selected" href="contact_55850_es.html">Contacto</a><a class="item_menu" href="livredor_55850_es.html">Opinión</a><a class="item_menu menu_back_index" href="index.html">Otros alojamientos</a>
+		</div>	</div>
+</div>	<div class="body_site">
+
+	<div class="body_site_content text">
+
+	<div class="bloc_data">
+		<br>
+				<a href="../www.cybevasion.fr/comptes/photos_profils/2069_975_1945.jpg" class="photo_profil swipebox"><img src="../www.cybevasion.fr/thumb/220x165/comptes/photos_profils/2069_975_1945.jpg"></a>
+		
+		<svg class="image_blocs_inputs" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="#929292">
+			<path d="M51.9 14.7l32.2 32.1c0.6 0.6 0.9 1.5 0.7 2.3L77 93.9c-0.2 1.2-1.3 2.1-2.6 2.1H61.3c-1.5 0-2.7-1.3-2.6-2.8l2.1-22.3c0.1-1.5-1.1-2.8-2.6-2.8H42c-1.5 0-2.7 1.3-2.6 2.8l2.1 22.3c0.1 1.5-1.1 2.8-2.6 2.8H25.8c-1.3 0-2.3-0.9-2.6-2.1l-7.9-44.9c-0.1-0.8 0.1-1.7 0.7-2.3l32.2-32.1C49.3 13.7 50.9 13.7 51.9 14.7z"></path>
+			<path d="M8 52c-0.7 0-1.4-0.2-2-0.7 -1.3-1.2-1.3-3.3 0-4.5L47.9 4.8c1.2-1.2 3.1-1.2 4.2 0l42 42c1.2 1.2 1.2 3.2-0.1 4.4 -1.2 1.1-3.1 0.9-4.2-0.2L51.7 12.8c-0.9-0.9-2.4-0.9-3.3 0L10.1 51.1C9.5 51.7 8.7 52 8 52z"></path>
+		</svg>
+		<div class="div_inline_block_top blocs_inputs">
+			<b class="titre_contact">Maison &quot;C&ocirc;t&eacute; Ouest&quot; maison avec terrasse, gu&eacute;rande centre</b>
+			<br>
+			Ma&euml;lle
+			<br>
+			26 bis, chemin Thobie<br>44350 GU&Eacute;RANDE<br>
+
+			
+			
+		</div>
+		<br><br>
+
+				<svg class="image_blocs_inputs" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 340 340" fill="#929292">
+			<path d="M263 294l35 -35c0,0 6,-11 -2,-21 -9,-9 -53,-32 -53,-32 0,0 -10,-6 -22,6 -12,13 -12,13 -12,13 0,0 -6,5 -14,1 -31,-16 -71,-56 -88,-88 -4,-7 2,-14 2,-14 0,0 -1,1 12,-11 13,-13 6,-22 6,-22 0,0 -22,-45 -32,-53 -9,-9 -21,-3 -21,-3l-35 36c-40,79 144,263 224,223z"></path>
+		</svg>
+		<div class="div_inline_block_top blocs_inputs">
+			06 20 14 62 55
+		</div>
+		<br><br>
+		
+		<br class="clear_tablet">
+		<form name="form_contact" id="form_contact" action="https://www.auxgitesdemaelle.com/message_55850.html" method="GET">
+			<svg class="image_blocs_inputs" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="5 957 90 90" fill="#929292">
+				<path d="m16 974.4c-3.3 0-6 2.7-6 6l0 44c0 3.3 2.7 6 6 6l68 0c3.3 0 6-2.7 6-6l0-44c0-3.3-2.7-6-6-6l-68 0zm4.8 9a2 2 0 0 1 1.7 0.6l24.8 24.3c1.5 1.5 4.1 1.5 5.6 0l24.8-24.3a2 2 0 1 1 2.8 2.8l-16.2 15.9 16.2 15.2a2 2 0 0 1-2.7 2.9l-16.3-15.3-5.7 5.6c-3.1 3-8.2 3-11.2 0l-5.7-5.6-16.3 15.3a2 2 0 0 1-2.7-2.9l16.2-15.2-16.2-15.9a2 2 0 0 1 1.2-3.4z"></path>
+			</svg>
+			<div class="div_inline_block_top blocs_inputs">
+			<div class="info_form info_form_50"><label for="nom" class="ellipsis">Nombre completo</label><input name="nom_prenom" id="nom" type="text" class="input_text input_text_50"></div><div class="info_form info_form_50"><label for="telephone" class="ellipsis">Teléfono</label><input name="telephone" id="telephone" type="text" placeholder=" " class="input_text input_text_50"><input id="iso_tel_format" name="iso_tel_format" type="hidden"><input id="tel_format" name="tel_format" type="hidden"></div><div class="info_form"><label for="email" class="ellipsis">E-mail</label><input name="email" id="email" type="text" class="input_text"></div><div class="info_form info_form_30"><label for="date_arrivee" class="ellipsis">Fecha de llegada</label><input name="date_arrivee" id="date_arrivee" type="text" class="input_text_date input_with_background" readonly style="background: url(couleur/svg_calendar_2.svg);cursor: pointer;"></div><div class="info_form info_form_30"><label for="date_arrivee" class="ellipsis">Fecha de salida</label><input name="date_depart" id="date_depart" type="text" class="input_text_date input_with_background" readonly style="background: url(couleur/svg_calendar_2.svg);cursor: pointer;"></div><div class="info_form info_form_30"><label for="nb_personnes" class="ellipsis">Personas</label><div id="wrap_nb_personnes"><input type="text" id="nb_personnes_text" class="input_personnes" readonly value=""><div id="nb_personnes_toggle"> <select id="nb_adultes" name="nb_adultes" onchange="maj_nb_adultes_enfants();"><option value="1">1 adulto</option><option value="2">2 adultos</option></select> <select id="nb_enfants" name="nb_enfants" onchange="maj_moteur_nb_enfants('&lt;select class=&quot;age_enfant&quot; name=&quot;age_enfant[]&quot;&gt;&lt;option value=&quot;0&quot;&gt;menores de 1 año&lt;/option&gt;&lt;option value=&quot;1&quot;&gt;1 edad&lt;/option&gt;&lt;option value=&quot;2&quot;&gt;2 años&lt;/option&gt;&lt;option value=&quot;3&quot;&gt;3 años&lt;/option&gt;&lt;option value=&quot;4&quot;&gt;4 años&lt;/option&gt;&lt;option value=&quot;5&quot;&gt;5 años&lt;/option&gt;&lt;option value=&quot;6&quot;&gt;6 años&lt;/option&gt;&lt;option value=&quot;7&quot;&gt;7 años&lt;/option&gt;&lt;option value=&quot;8&quot;&gt;8 años&lt;/option&gt;&lt;option value=&quot;9&quot;&gt;9 años&lt;/option&gt;&lt;option value=&quot;10&quot;&gt;10 años&lt;/option&gt;&lt;option value=&quot;11&quot;&gt;11 años&lt;/option&gt;&lt;option value=&quot;12&quot;&gt;12 años&lt;/option&gt;&lt;option value=&quot;13&quot;&gt;13 años&lt;/option&gt;&lt;option value=&quot;14&quot;&gt;14 años&lt;/option&gt;&lt;option value=&quot;15&quot;&gt;15 años&lt;/option&gt;&lt;option value=&quot;16&quot;&gt;16 años&lt;/option&gt;&lt;option value=&quot;17&quot;&gt;17 años&lt;/option&gt;&lt;/select&gt; ');maj_nb_adultes_enfants();"><option value="0">0 niño</option><option value="1">1 niño</option></select><div id="ages_enfants"><div id="info_age_enfant">Edad de los niños</div></div></div></div><input id="nb_personnes" name="nb_personnes" type="hidden" value="1"></div><div class="info_form"><label for="message" class="ellipsis">Su mensaje</label><textarea name="message" id="message" rows="5" class="input_text"></textarea></div><div class="info_form" style="font-size: 0.9em;"><img src="https://www.cybevasion.fr/lib3/svg/animaux_1.svg" height="16" style="margin: 0 2px -2px 0;"> Se admiten mascotas.</div><div class="info_form info_form_auto" style="padding-top: 10px;"><input name="domaine" type="hidden" value="siteweb"><input name="my_button" id="my_button" type="button" onclick="verif_form();" value="Enviar un mensaje"></div>			</div>
+		</form>	</div>
+
+	</div>	</div>	<div class="footer_site">
+	<div class="footer_site_content">
+		<div class="footer">
+			Site internet réalisé par <a href="https://www.cybevasion.fr/contact.html" target="_blank">Cybevasion.fr</a><span class="not_mobile_block"> - </span><a href="mentions-legales_55850.html">Mentions légales</a>
+		</div>
+	</div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="../www.cybevasion.fr/jquery/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../www.cybevasion.fr/jquery/jquery.qtip.css">
+<link rel="stylesheet" type="text/css" href="../www.cybevasion.fr/jquery/jquery.swipebox.css">
+
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery.extensions.js"></script>
+<script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery.ui.datepicker-es.js"></script>
+<script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery.swipebox.js"></script>
+<script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery-event-swipe.js"></script>
+
+<script type="text/javascript" src="../www.cybevasion.fr/javascript/cookiechoices7254.js?202105041646"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function(event) {
+	cookieChoices.showCookieConsentBar('En naviguant sur notre site, vous acceptez l\'utilisation de cookies pour nous permettre de réaliser des analyses et vous proposer des contenus adaptés à vos centres d\'intérêts.', 'ACCEPTER', 'PARAMETRER', 'cookies.html');
+});
+</script>
+
+<script>
+$('[title!=""]').qtip({
+	position: {
+		viewport: $(window),
+		target: 'mouse',
+		adjust: { mouse: true, x: 15, y: 15 }
+	},
+	style: { classes: 'qtip-light qtip-shadow', tip: {corner: false} }
+});
+
+$(function() {
+	$("#arrivee").datepicker({minDate: 0, maxDate: "+1Y +30D", numberOfMonths: 1});
+});
+
+/* Retourne le nb d'éléments d'un tableau associatif */
+function count(array){
+    var c = 0;
+    for(var i in array){
+        if(array[i] != 'undefined'){
+            c++;
+		}
+	}
+	return c;
+}
+
+$(document).ready(function(e) {
+	$('.swipebox').swipebox({hideBarsDelay : 0, useSVG : false});
+});
+</script>
+
+
+	<script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery.intlTelInput.min.js"></script>
+	<script type="text/javascript">
+	var tabDatesFermees = ['2024-11-21','2024-11-22','2024-11-23','2024-12-22','2024-12-23','2024-12-24','2024-12-25','2024-12-26','2024-12-29','2024-12-30','2024-12-31','2025-01-01','2025-01-02','2025-01-03','2025-01-04','2025-05-18','2025-05-19','2025-05-20','2025-05-21','2025-05-22','2025-05-23','2025-05-24','2025-05-25','2025-05-26','2025-05-27','2025-05-28','2025-05-29','2025-05-30','2025-05-31','2025-06-01','2025-06-02','2025-06-03','2025-06-04','2025-06-05','2025-06-06','2025-06-07','2025-06-08','2025-06-09','2025-06-10','2025-06-11','2025-06-12','2025-06-13','2025-06-14','2025-06-15','2025-06-16','2025-06-17','2025-06-18','2025-06-19','2025-06-20','2025-06-21','2025-06-22','2025-06-23','2025-06-24','2025-06-25','2025-06-26','2025-06-27','2025-06-28','2025-06-29','2025-06-30','2025-07-01','2025-07-02','2025-07-03','2025-07-04','2025-07-05','2025-07-06','2025-07-07','2025-07-08','2025-07-09','2025-07-10','2025-07-11','2025-07-12','2025-07-13','2025-07-14','2025-07-15','2025-07-16','2025-07-17','2025-07-18','2025-07-19','2025-07-20','2025-07-21','2025-07-22','2025-07-23','2025-07-24','2025-07-25','2025-07-26','2025-07-27','2025-07-28','2025-07-29','2025-07-30','2025-07-31','2025-08-01','2025-08-02','2025-08-03','2025-08-04','2025-08-05','2025-08-06','2025-08-07','2025-08-08','2025-08-09','2025-08-10','2025-08-11','2025-08-12','2025-08-13','2025-08-14','2025-08-15','2025-08-16','2025-08-17','2025-08-18','2025-08-19','2025-08-20','2025-08-21','2025-08-22','2025-08-23','2025-08-24','2025-08-25','2025-08-26','2025-08-27','2025-08-28','2025-08-29','2025-08-30','2025-08-31','2025-09-01','2025-09-02','2025-09-03','2025-09-04','2025-09-05','2025-09-06','2025-09-07','2025-09-08','2025-09-09','2025-09-10','2025-09-11','2025-09-12','2025-09-13','2025-09-14','2025-09-15','2025-09-16','2025-09-17','2025-09-18','2025-09-19','2025-09-20','2025-09-21','2025-09-22','2025-09-23','2025-09-24','2025-09-25','2025-09-26','2025-09-27','2025-09-28','2025-09-29','2025-09-30','2025-10-01','2025-10-02','2025-10-03','2025-10-04','2025-10-05','2025-10-06','2025-10-07','2025-10-08','2025-10-09','2025-10-10','2025-10-11','2025-10-12','2025-10-13','2025-10-14','2025-10-15','2025-10-16','2025-10-17','2025-10-18','2025-10-19','2025-10-20','2025-10-21','2025-10-22','2025-10-23','2025-10-24','2025-10-25','2025-10-26','2025-10-27','2025-10-28','2025-10-29','2025-10-30','2025-10-31','2025-11-01','2025-11-02','2025-11-03','2025-11-04','2025-11-05','2025-11-06','2025-11-07','2025-11-08','2025-11-09','2025-11-10','2025-11-11','2025-11-12','2025-11-13','2025-11-14','2025-11-15','2025-11-16','2025-11-17','2025-11-18','2025-11-19','2025-11-20','2025-11-21','2025-11-22','2025-11-23','2025-11-24','2025-11-25','2025-11-26','2025-11-27','2025-11-28','2025-11-29','2025-11-30','2025-12-01','2025-12-02','2025-12-03','2025-12-04','2025-12-05','2025-12-06','2025-12-07','2025-12-08','2025-12-09','2025-12-10','2025-12-11','2025-12-12','2025-12-13','2025-12-14','2025-12-15','2025-12-16','2025-12-17','2025-12-18','2025-12-19','2025-12-20','2025-12-21','2025-12-22','2025-12-23','2025-12-24','2025-12-25','2025-12-26','2025-12-27','2025-12-28','2025-12-29','2025-12-30','2025-12-31','2026-01-01','2026-01-02','2026-01-03','2026-01-04','2026-01-05','2026-01-06','2026-01-07','2026-01-08','2026-01-09','2026-01-10','2026-01-11','2026-01-12','2026-01-13','2026-01-14','2026-01-15','2026-01-16','2026-01-17','2026-01-18','2026-01-19','2026-01-20','2026-01-21','2026-01-22','2026-01-23','2026-01-24','2026-01-25','2026-01-26','2026-01-27','2026-01-28','2026-01-29','2026-01-30','2026-01-31','2026-02-01','2026-02-02','2026-02-03','2026-02-04','2026-02-05','2026-02-06','2026-02-07','2026-02-08','2026-02-09','2026-02-10','2026-02-11','2026-02-12','2026-02-13','2026-02-14','2026-02-15','2026-02-16','2026-02-17','2026-02-18','2026-02-19','2026-02-20','2026-02-21','2026-02-22','2026-02-23','2026-02-24','2026-02-25','2026-02-26','2026-02-27','2026-02-28',];
+
+	var tab_dates_detail = {"2024-11-19":"available","2024-11-20":"available","2024-11-21":"available|no_arrival|dispo_0","2024-11-22":"unavailable","2024-11-23":"unavailable","2024-11-24":"available","2024-11-25":"available","2024-11-26":"available","2024-11-27":"available","2024-11-28":"available","2024-11-29":"available","2024-11-30":"available","2024-12-01":"available","2024-12-02":"available","2024-12-03":"available","2024-12-04":"available","2024-12-05":"available","2024-12-06":"available","2024-12-07":"available","2024-12-08":"available","2024-12-09":"available","2024-12-10":"available","2024-12-11":"available","2024-12-12":"available","2024-12-13":"available","2024-12-14":"available","2024-12-15":"available","2024-12-16":"available","2024-12-17":"available","2024-12-18":"available","2024-12-19":"available","2024-12-20":"available","2024-12-21":"available","2024-12-22":"available|no_arrival|dispo_0","2024-12-23":"unavailable","2024-12-24":"unavailable","2024-12-25":"unavailable","2024-12-26":"unavailable","2024-12-27":"available","2024-12-28":"available","2024-12-29":"available|no_arrival|dispo_0","2024-12-30":"unavailable","2024-12-31":"unavailable","2025-01-01":"unavailable","2025-01-02":"unavailable","2025-01-03":"unavailable","2025-01-04":"unavailable","2025-01-05":"available","2025-01-06":"available","2025-01-07":"available","2025-01-08":"available","2025-01-09":"available","2025-01-10":"available","2025-01-11":"available","2025-01-12":"available","2025-01-13":"available","2025-01-14":"available","2025-01-15":"available","2025-01-16":"available","2025-01-17":"available","2025-01-18":"available","2025-01-19":"available","2025-01-20":"available","2025-01-21":"available","2025-01-22":"available","2025-01-23":"available","2025-01-24":"available","2025-01-25":"available","2025-01-26":"available","2025-01-27":"available","2025-01-28":"available","2025-01-29":"available","2025-01-30":"available","2025-01-31":"available","2025-02-01":"available","2025-02-02":"available","2025-02-03":"available","2025-02-04":"available","2025-02-05":"available","2025-02-06":"available","2025-02-07":"available","2025-02-08":"available","2025-02-09":"available","2025-02-10":"available","2025-02-11":"available","2025-02-12":"available","2025-02-13":"available","2025-02-14":"available","2025-02-15":"available","2025-02-16":"available","2025-02-17":"available","2025-02-18":"available","2025-02-19":"available","2025-02-20":"available","2025-02-21":"available","2025-02-22":"available","2025-02-23":"available","2025-02-24":"available","2025-02-25":"available","2025-02-26":"available","2025-02-27":"available","2025-02-28":"available","2025-03-01":"available","2025-03-02":"available","2025-03-03":"available","2025-03-04":"available","2025-03-05":"available","2025-03-06":"available","2025-03-07":"available","2025-03-08":"available","2025-03-09":"available","2025-03-10":"available","2025-03-11":"available","2025-03-12":"available","2025-03-13":"available","2025-03-14":"available","2025-03-15":"available","2025-03-16":"available","2025-03-17":"available","2025-03-18":"available","2025-03-19":"available","2025-03-20":"available","2025-03-21":"available","2025-03-22":"available","2025-03-23":"available","2025-03-24":"available","2025-03-25":"available","2025-03-26":"available","2025-03-27":"available","2025-03-28":"available","2025-03-29":"available","2025-03-30":"available","2025-03-31":"available","2025-04-01":"available","2025-04-02":"available","2025-04-03":"available","2025-04-04":"available","2025-04-05":"available","2025-04-06":"available","2025-04-07":"available","2025-04-08":"available","2025-04-09":"available","2025-04-10":"available","2025-04-11":"available","2025-04-12":"available","2025-04-13":"available","2025-04-14":"available","2025-04-15":"available","2025-04-16":"available","2025-04-17":"available","2025-04-18":"available","2025-04-19":"available","2025-04-20":"available","2025-04-21":"available","2025-04-22":"available","2025-04-23":"available","2025-04-24":"available","2025-04-25":"available","2025-04-26":"available","2025-04-27":"available","2025-04-28":"available","2025-04-29":"available","2025-04-30":"available","2025-05-01":"available","2025-05-02":"available","2025-05-03":"available","2025-05-04":"available","2025-05-05":"available","2025-05-06":"available","2025-05-07":"available","2025-05-08":"available","2025-05-09":"available","2025-05-10":"available","2025-05-11":"available","2025-05-12":"available","2025-05-13":"available","2025-05-14":"available","2025-05-15":"available","2025-05-16":"available","2025-05-17":"available","2025-05-18":"available|no_arrival|delai_max_ouv_resa|dispo_0","2025-05-19":"unavailable|delai_max_ouv_resa","2025-05-20":"unavailable|delai_max_ouv_resa","2025-05-21":"unavailable|delai_max_ouv_resa","2025-05-22":"unavailable|delai_max_ouv_resa","2025-05-23":"unavailable|delai_max_ouv_resa","2025-05-24":"unavailable|delai_max_ouv_resa","2025-05-25":"unavailable|delai_max_ouv_resa","2025-05-26":"unavailable|delai_max_ouv_resa","2025-05-27":"unavailable|delai_max_ouv_resa","2025-05-28":"unavailable|delai_max_ouv_resa","2025-05-29":"unavailable|delai_max_ouv_resa","2025-05-30":"unavailable|delai_max_ouv_resa","2025-05-31":"unavailable|delai_max_ouv_resa","2025-06-01":"unavailable|delai_max_ouv_resa","2025-06-02":"unavailable|delai_max_ouv_resa","2025-06-03":"unavailable|delai_max_ouv_resa","2025-06-04":"unavailable|delai_max_ouv_resa","2025-06-05":"unavailable|delai_max_ouv_resa","2025-06-06":"unavailable|delai_max_ouv_resa","2025-06-07":"unavailable|delai_max_ouv_resa","2025-06-08":"unavailable|delai_max_ouv_resa","2025-06-09":"unavailable|delai_max_ouv_resa","2025-06-10":"unavailable|delai_max_ouv_resa","2025-06-11":"unavailable|delai_max_ouv_resa","2025-06-12":"unavailable|delai_max_ouv_resa","2025-06-13":"unavailable|delai_max_ouv_resa","2025-06-14":"unavailable|delai_max_ouv_resa","2025-06-15":"unavailable|delai_max_ouv_resa","2025-06-16":"unavailable|delai_max_ouv_resa","2025-06-17":"unavailable|delai_max_ouv_resa","2025-06-18":"unavailable|delai_max_ouv_resa","2025-06-19":"unavailable|delai_max_ouv_resa","2025-06-20":"unavailable|delai_max_ouv_resa","2025-06-21":"unavailable|delai_max_ouv_resa","2025-06-22":"unavailable|delai_max_ouv_resa","2025-06-23":"unavailable|delai_max_ouv_resa","2025-06-24":"unavailable|delai_max_ouv_resa","2025-06-25":"unavailable|delai_max_ouv_resa","2025-06-26":"unavailable|delai_max_ouv_resa","2025-06-27":"unavailable|delai_max_ouv_resa","2025-06-28":"unavailable|delai_max_ouv_resa","2025-06-29":"unavailable|delai_max_ouv_resa","2025-06-30":"unavailable|delai_max_ouv_resa","2025-07-01":"unavailable|delai_max_ouv_resa","2025-07-02":"unavailable|delai_max_ouv_resa","2025-07-03":"unavailable|delai_max_ouv_resa","2025-07-04":"unavailable|delai_max_ouv_resa","2025-07-05":"unavailable|delai_max_ouv_resa","2025-07-06":"unavailable|delai_max_ouv_resa","2025-07-07":"unavailable|delai_max_ouv_resa","2025-07-08":"unavailable|delai_max_ouv_resa","2025-07-09":"unavailable|delai_max_ouv_resa","2025-07-10":"unavailable|delai_max_ouv_resa","2025-07-11":"unavailable|delai_max_ouv_resa","2025-07-12":"unavailable|delai_max_ouv_resa","2025-07-13":"unavailable|delai_max_ouv_resa","2025-07-14":"unavailable|delai_max_ouv_resa","2025-07-15":"unavailable|delai_max_ouv_resa","2025-07-16":"unavailable|delai_max_ouv_resa","2025-07-17":"unavailable|delai_max_ouv_resa","2025-07-18":"unavailable|delai_max_ouv_resa","2025-07-19":"unavailable|delai_max_ouv_resa","2025-07-20":"unavailable|delai_max_ouv_resa","2025-07-21":"unavailable|delai_max_ouv_resa","2025-07-22":"unavailable|delai_max_ouv_resa","2025-07-23":"unavailable|delai_max_ouv_resa","2025-07-24":"unavailable|delai_max_ouv_resa","2025-07-25":"unavailable|delai_max_ouv_resa","2025-07-26":"unavailable|delai_max_ouv_resa","2025-07-27":"unavailable|delai_max_ouv_resa","2025-07-28":"unavailable|delai_max_ouv_resa","2025-07-29":"unavailable|delai_max_ouv_resa","2025-07-30":"unavailable|delai_max_ouv_resa","2025-07-31":"unavailable|delai_max_ouv_resa","2025-08-01":"unavailable|delai_max_ouv_resa","2025-08-02":"unavailable|delai_max_ouv_resa","2025-08-03":"unavailable|delai_max_ouv_resa","2025-08-04":"unavailable|delai_max_ouv_resa","2025-08-05":"unavailable|delai_max_ouv_resa","2025-08-06":"unavailable|delai_max_ouv_resa","2025-08-07":"unavailable|delai_max_ouv_resa","2025-08-08":"unavailable|delai_max_ouv_resa","2025-08-09":"unavailable|delai_max_ouv_resa","2025-08-10":"unavailable|delai_max_ouv_resa","2025-08-11":"unavailable|delai_max_ouv_resa","2025-08-12":"unavailable|delai_max_ouv_resa","2025-08-13":"unavailable|delai_max_ouv_resa","2025-08-14":"unavailable|delai_max_ouv_resa","2025-08-15":"unavailable|delai_max_ouv_resa","2025-08-16":"unavailable|delai_max_ouv_resa","2025-08-17":"unavailable|delai_max_ouv_resa","2025-08-18":"unavailable|delai_max_ouv_resa","2025-08-19":"unavailable|delai_max_ouv_resa","2025-08-20":"unavailable|delai_max_ouv_resa","2025-08-21":"unavailable|delai_max_ouv_resa","2025-08-22":"unavailable|delai_max_ouv_resa","2025-08-23":"unavailable|delai_max_ouv_resa","2025-08-24":"unavailable|delai_max_ouv_resa","2025-08-25":"unavailable|delai_max_ouv_resa","2025-08-26":"unavailable|delai_max_ouv_resa","2025-08-27":"unavailable|delai_max_ouv_resa","2025-08-28":"unavailable|delai_max_ouv_resa","2025-08-29":"unavailable|delai_max_ouv_resa","2025-08-30":"unavailable|delai_max_ouv_resa","2025-08-31":"unavailable|delai_max_ouv_resa","2025-09-01":"unavailable|delai_max_ouv_resa","2025-09-02":"unavailable|delai_max_ouv_resa","2025-09-03":"unavailable|delai_max_ouv_resa","2025-09-04":"unavailable|delai_max_ouv_resa","2025-09-05":"unavailable|delai_max_ouv_resa","2025-09-06":"unavailable|delai_max_ouv_resa","2025-09-07":"unavailable|delai_max_ouv_resa","2025-09-08":"unavailable|delai_max_ouv_resa","2025-09-09":"unavailable|delai_max_ouv_resa","2025-09-10":"unavailable|delai_max_ouv_resa","2025-09-11":"unavailable|delai_max_ouv_resa","2025-09-12":"unavailable|delai_max_ouv_resa","2025-09-13":"unavailable|delai_max_ouv_resa","2025-09-14":"unavailable|delai_max_ouv_resa","2025-09-15":"unavailable|delai_max_ouv_resa","2025-09-16":"unavailable|delai_max_ouv_resa","2025-09-17":"unavailable|delai_max_ouv_resa","2025-09-18":"unavailable|delai_max_ouv_resa","2025-09-19":"unavailable|delai_max_ouv_resa","2025-09-20":"unavailable|delai_max_ouv_resa","2025-09-21":"unavailable|delai_max_ouv_resa","2025-09-22":"unavailable|delai_max_ouv_resa","2025-09-23":"unavailable|delai_max_ouv_resa","2025-09-24":"unavailable|delai_max_ouv_resa","2025-09-25":"unavailable|delai_max_ouv_resa","2025-09-26":"unavailable|delai_max_ouv_resa","2025-09-27":"unavailable|delai_max_ouv_resa","2025-09-28":"unavailable|delai_max_ouv_resa","2025-09-29":"unavailable|delai_max_ouv_resa","2025-09-30":"unavailable|delai_max_ouv_resa","2025-10-01":"unavailable|delai_max_ouv_resa","2025-10-02":"unavailable|delai_max_ouv_resa","2025-10-03":"unavailable|delai_max_ouv_resa","2025-10-04":"unavailable|delai_max_ouv_resa","2025-10-05":"unavailable|delai_max_ouv_resa","2025-10-06":"unavailable|delai_max_ouv_resa","2025-10-07":"unavailable|delai_max_ouv_resa","2025-10-08":"unavailable|delai_max_ouv_resa","2025-10-09":"unavailable|delai_max_ouv_resa","2025-10-10":"unavailable|delai_max_ouv_resa","2025-10-11":"unavailable|delai_max_ouv_resa","2025-10-12":"unavailable|delai_max_ouv_resa","2025-10-13":"unavailable|delai_max_ouv_resa","2025-10-14":"unavailable|delai_max_ouv_resa","2025-10-15":"unavailable|delai_max_ouv_resa","2025-10-16":"unavailable|delai_max_ouv_resa","2025-10-17":"unavailable|delai_max_ouv_resa","2025-10-18":"unavailable|delai_max_ouv_resa","2025-10-19":"unavailable|delai_max_ouv_resa","2025-10-20":"unavailable|delai_max_ouv_resa","2025-10-21":"unavailable|delai_max_ouv_resa","2025-10-22":"unavailable|delai_max_ouv_resa","2025-10-23":"unavailable|delai_max_ouv_resa","2025-10-24":"unavailable|delai_max_ouv_resa","2025-10-25":"unavailable|delai_max_ouv_resa","2025-10-26":"unavailable|delai_max_ouv_resa","2025-10-27":"unavailable|delai_max_ouv_resa","2025-10-28":"unavailable|delai_max_ouv_resa","2025-10-29":"unavailable|delai_max_ouv_resa","2025-10-30":"unavailable|delai_max_ouv_resa","2025-10-31":"unavailable|delai_max_ouv_resa","2025-11-01":"unavailable|delai_max_ouv_resa","2025-11-02":"unavailable|delai_max_ouv_resa","2025-11-03":"unavailable|delai_max_ouv_resa","2025-11-04":"unavailable|delai_max_ouv_resa","2025-11-05":"unavailable|delai_max_ouv_resa","2025-11-06":"unavailable|delai_max_ouv_resa","2025-11-07":"unavailable|delai_max_ouv_resa","2025-11-08":"unavailable|delai_max_ouv_resa","2025-11-09":"unavailable|delai_max_ouv_resa","2025-11-10":"unavailable|delai_max_ouv_resa","2025-11-11":"unavailable|delai_max_ouv_resa","2025-11-12":"unavailable|delai_max_ouv_resa","2025-11-13":"unavailable|delai_max_ouv_resa","2025-11-14":"unavailable|delai_max_ouv_resa","2025-11-15":"unavailable|delai_max_ouv_resa","2025-11-16":"unavailable|delai_max_ouv_resa","2025-11-17":"unavailable|delai_max_ouv_resa","2025-11-18":"unavailable|delai_max_ouv_resa","2025-11-19":"unavailable|delai_max_ouv_resa","2025-11-20":"unavailable|delai_max_ouv_resa","2025-11-21":"unavailable|delai_max_ouv_resa","2025-11-22":"unavailable|delai_max_ouv_resa","2025-11-23":"unavailable|delai_max_ouv_resa","2025-11-24":"unavailable|delai_max_ouv_resa","2025-11-25":"unavailable|delai_max_ouv_resa","2025-11-26":"unavailable|delai_max_ouv_resa","2025-11-27":"unavailable|delai_max_ouv_resa","2025-11-28":"unavailable|delai_max_ouv_resa","2025-11-29":"unavailable|delai_max_ouv_resa","2025-11-30":"unavailable|delai_max_ouv_resa","2025-12-01":"unavailable|delai_max_ouv_resa","2025-12-02":"unavailable|delai_max_ouv_resa","2025-12-03":"unavailable|delai_max_ouv_resa","2025-12-04":"unavailable|delai_max_ouv_resa","2025-12-05":"unavailable|delai_max_ouv_resa","2025-12-06":"unavailable|delai_max_ouv_resa","2025-12-07":"unavailable|delai_max_ouv_resa","2025-12-08":"unavailable|delai_max_ouv_resa","2025-12-09":"unavailable|delai_max_ouv_resa","2025-12-10":"unavailable|delai_max_ouv_resa","2025-12-11":"unavailable|delai_max_ouv_resa","2025-12-12":"unavailable|delai_max_ouv_resa","2025-12-13":"unavailable|delai_max_ouv_resa","2025-12-14":"unavailable|delai_max_ouv_resa","2025-12-15":"unavailable|delai_max_ouv_resa","2025-12-16":"unavailable|delai_max_ouv_resa","2025-12-17":"unavailable|delai_max_ouv_resa","2025-12-18":"unavailable|delai_max_ouv_resa","2025-12-19":"unavailable|delai_max_ouv_resa","2025-12-20":"unavailable|delai_max_ouv_resa","2025-12-21":"unavailable|delai_max_ouv_resa","2025-12-22":"unavailable|delai_max_ouv_resa","2025-12-23":"unavailable|delai_max_ouv_resa","2025-12-24":"unavailable|delai_max_ouv_resa","2025-12-25":"unavailable|delai_max_ouv_resa","2025-12-26":"unavailable|delai_max_ouv_resa","2025-12-27":"unavailable|delai_max_ouv_resa","2025-12-28":"unavailable|delai_max_ouv_resa","2025-12-29":"unavailable|delai_max_ouv_resa","2025-12-30":"unavailable|delai_max_ouv_resa","2025-12-31":"unavailable|delai_max_ouv_resa","2026-01-01":"unavailable|delai_max_ouv_resa","2026-01-02":"unavailable|delai_max_ouv_resa","2026-01-03":"unavailable|delai_max_ouv_resa","2026-01-04":"unavailable|delai_max_ouv_resa","2026-01-05":"unavailable|delai_max_ouv_resa","2026-01-06":"unavailable|delai_max_ouv_resa","2026-01-07":"unavailable|delai_max_ouv_resa","2026-01-08":"unavailable|delai_max_ouv_resa","2026-01-09":"unavailable|delai_max_ouv_resa","2026-01-10":"unavailable|delai_max_ouv_resa","2026-01-11":"unavailable|delai_max_ouv_resa","2026-01-12":"unavailable|delai_max_ouv_resa","2026-01-13":"unavailable|delai_max_ouv_resa","2026-01-14":"unavailable|delai_max_ouv_resa","2026-01-15":"unavailable|delai_max_ouv_resa","2026-01-16":"unavailable|delai_max_ouv_resa","2026-01-17":"unavailable|delai_max_ouv_resa","2026-01-18":"unavailable|delai_max_ouv_resa","2026-01-19":"unavailable|delai_max_ouv_resa","2026-01-20":"unavailable|delai_max_ouv_resa","2026-01-21":"unavailable|delai_max_ouv_resa","2026-01-22":"unavailable|delai_max_ouv_resa","2026-01-23":"unavailable|delai_max_ouv_resa","2026-01-24":"unavailable|delai_max_ouv_resa","2026-01-25":"unavailable|delai_max_ouv_resa","2026-01-26":"unavailable|delai_max_ouv_resa","2026-01-27":"unavailable|delai_max_ouv_resa","2026-01-28":"unavailable|delai_max_ouv_resa","2026-01-29":"unavailable|delai_max_ouv_resa","2026-01-30":"unavailable|delai_max_ouv_resa","2026-01-31":"unavailable|delai_max_ouv_resa","2026-02-01":"unavailable|delai_max_ouv_resa","2026-02-02":"unavailable|delai_max_ouv_resa","2026-02-03":"unavailable|delai_max_ouv_resa","2026-02-04":"unavailable|delai_max_ouv_resa","2026-02-05":"unavailable|delai_max_ouv_resa","2026-02-06":"unavailable|delai_max_ouv_resa","2026-02-07":"unavailable|delai_max_ouv_resa","2026-02-08":"unavailable|delai_max_ouv_resa","2026-02-09":"unavailable|delai_max_ouv_resa","2026-02-10":"unavailable|delai_max_ouv_resa","2026-02-11":"unavailable|delai_max_ouv_resa","2026-02-12":"unavailable|delai_max_ouv_resa","2026-02-13":"unavailable|delai_max_ouv_resa","2026-02-14":"unavailable|delai_max_ouv_resa","2026-02-15":"unavailable|delai_max_ouv_resa","2026-02-16":"unavailable|delai_max_ouv_resa","2026-02-17":"unavailable|delai_max_ouv_resa","2026-02-18":"unavailable|delai_max_ouv_resa","2026-02-19":"unavailable|delai_max_ouv_resa","2026-02-20":"unavailable|delai_max_ouv_resa","2026-02-21":"unavailable|delai_max_ouv_resa","2026-02-22":"unavailable|delai_max_ouv_resa","2026-02-23":"unavailable|delai_max_ouv_resa","2026-02-24":"unavailable|delai_max_ouv_resa","2026-02-25":"unavailable|delai_max_ouv_resa","2026-02-26":"unavailable|delai_max_ouv_resa","2026-02-27":"unavailable|delai_max_ouv_resa","2026-02-28":"unavailable|delai_max_ouv_resa"};
+
+	var tabDureeslocMiniDates = [];
+tabDureeslocMiniDates[0] = [];
+tabDureeslocMiniDates[0]['dd'] = '2024-11-19';
+tabDureeslocMiniDates[0]['df'] = '2025-07-11';
+tabDureeslocMiniDates[0]['dm'] = '1';
+tabDureeslocMiniDates[0]['dmax'] = '255';
+tabDureeslocMiniDates[1] = [];
+tabDureeslocMiniDates[1]['dd'] = '2025-07-12';
+tabDureeslocMiniDates[1]['df'] = '2025-07-12';
+tabDureeslocMiniDates[1]['dm'] = '7';
+tabDureeslocMiniDates[1]['dmax'] = '255';
+tabDureeslocMiniDates[2] = [];
+tabDureeslocMiniDates[2]['dd'] = '2025-07-13';
+tabDureeslocMiniDates[2]['df'] = '2025-07-18';
+tabDureeslocMiniDates[2]['dm'] = '1';
+tabDureeslocMiniDates[2]['dmax'] = '255';
+tabDureeslocMiniDates[3] = [];
+tabDureeslocMiniDates[3]['dd'] = '2025-07-19';
+tabDureeslocMiniDates[3]['df'] = '2025-07-19';
+tabDureeslocMiniDates[3]['dm'] = '7';
+tabDureeslocMiniDates[3]['dmax'] = '255';
+tabDureeslocMiniDates[4] = [];
+tabDureeslocMiniDates[4]['dd'] = '2025-07-20';
+tabDureeslocMiniDates[4]['df'] = '2025-07-25';
+tabDureeslocMiniDates[4]['dm'] = '1';
+tabDureeslocMiniDates[4]['dmax'] = '255';
+tabDureeslocMiniDates[5] = [];
+tabDureeslocMiniDates[5]['dd'] = '2025-07-26';
+tabDureeslocMiniDates[5]['df'] = '2025-07-26';
+tabDureeslocMiniDates[5]['dm'] = '7';
+tabDureeslocMiniDates[5]['dmax'] = '255';
+tabDureeslocMiniDates[6] = [];
+tabDureeslocMiniDates[6]['dd'] = '2025-07-27';
+tabDureeslocMiniDates[6]['df'] = '2025-08-01';
+tabDureeslocMiniDates[6]['dm'] = '1';
+tabDureeslocMiniDates[6]['dmax'] = '255';
+tabDureeslocMiniDates[7] = [];
+tabDureeslocMiniDates[7]['dd'] = '2025-08-02';
+tabDureeslocMiniDates[7]['df'] = '2025-08-02';
+tabDureeslocMiniDates[7]['dm'] = '7';
+tabDureeslocMiniDates[7]['dmax'] = '255';
+tabDureeslocMiniDates[8] = [];
+tabDureeslocMiniDates[8]['dd'] = '2025-08-03';
+tabDureeslocMiniDates[8]['df'] = '2025-08-08';
+tabDureeslocMiniDates[8]['dm'] = '1';
+tabDureeslocMiniDates[8]['dmax'] = '255';
+tabDureeslocMiniDates[9] = [];
+tabDureeslocMiniDates[9]['dd'] = '2025-08-09';
+tabDureeslocMiniDates[9]['df'] = '2025-08-09';
+tabDureeslocMiniDates[9]['dm'] = '7';
+tabDureeslocMiniDates[9]['dmax'] = '255';
+tabDureeslocMiniDates[10] = [];
+tabDureeslocMiniDates[10]['dd'] = '2025-08-10';
+tabDureeslocMiniDates[10]['df'] = '2025-08-15';
+tabDureeslocMiniDates[10]['dm'] = '1';
+tabDureeslocMiniDates[10]['dmax'] = '255';
+tabDureeslocMiniDates[11] = [];
+tabDureeslocMiniDates[11]['dd'] = '2025-08-16';
+tabDureeslocMiniDates[11]['df'] = '2025-08-16';
+tabDureeslocMiniDates[11]['dm'] = '7';
+tabDureeslocMiniDates[11]['dmax'] = '255';
+tabDureeslocMiniDates[12] = [];
+tabDureeslocMiniDates[12]['dd'] = '2025-08-17';
+tabDureeslocMiniDates[12]['df'] = '2025-08-22';
+tabDureeslocMiniDates[12]['dm'] = '1';
+tabDureeslocMiniDates[12]['dmax'] = '255';
+tabDureeslocMiniDates[13] = [];
+tabDureeslocMiniDates[13]['dd'] = '2025-08-23';
+tabDureeslocMiniDates[13]['df'] = '2025-08-23';
+tabDureeslocMiniDates[13]['dm'] = '7';
+tabDureeslocMiniDates[13]['dmax'] = '255';
+tabDureeslocMiniDates[14] = [];
+tabDureeslocMiniDates[14]['dd'] = '2025-08-24';
+tabDureeslocMiniDates[14]['df'] = '2025-08-29';
+tabDureeslocMiniDates[14]['dm'] = '1';
+tabDureeslocMiniDates[14]['dmax'] = '255';
+tabDureeslocMiniDates[15] = [];
+tabDureeslocMiniDates[15]['dd'] = '2025-08-30';
+tabDureeslocMiniDates[15]['df'] = '2025-08-30';
+tabDureeslocMiniDates[15]['dm'] = '7';
+tabDureeslocMiniDates[15]['dmax'] = '255';
+tabDureeslocMiniDates[16] = [];
+tabDureeslocMiniDates[16]['dd'] = '2025-08-31';
+tabDureeslocMiniDates[16]['df'] = '2025-09-05';
+tabDureeslocMiniDates[16]['dm'] = '1';
+tabDureeslocMiniDates[16]['dmax'] = '255';
+tabDureeslocMiniDates[17] = [];
+tabDureeslocMiniDates[17]['dd'] = '2025-09-06';
+tabDureeslocMiniDates[17]['df'] = '2025-09-06';
+tabDureeslocMiniDates[17]['dm'] = '7';
+tabDureeslocMiniDates[17]['dmax'] = '255';
+tabDureeslocMiniDates[18] = [];
+tabDureeslocMiniDates[18]['dd'] = '2025-09-07';
+tabDureeslocMiniDates[18]['df'] = '2025-09-12';
+tabDureeslocMiniDates[18]['dm'] = '1';
+tabDureeslocMiniDates[18]['dmax'] = '255';
+tabDureeslocMiniDates[19] = [];
+tabDureeslocMiniDates[19]['dd'] = '2025-09-13';
+tabDureeslocMiniDates[19]['df'] = '2025-09-13';
+tabDureeslocMiniDates[19]['dm'] = '7';
+tabDureeslocMiniDates[19]['dmax'] = '255';
+tabDureeslocMiniDates[20] = [];
+tabDureeslocMiniDates[20]['dd'] = '2025-09-14';
+tabDureeslocMiniDates[20]['df'] = '2025-09-19';
+tabDureeslocMiniDates[20]['dm'] = '1';
+tabDureeslocMiniDates[20]['dmax'] = '255';
+tabDureeslocMiniDates[21] = [];
+tabDureeslocMiniDates[21]['dd'] = '2025-09-20';
+tabDureeslocMiniDates[21]['df'] = '2025-09-20';
+tabDureeslocMiniDates[21]['dm'] = '7';
+tabDureeslocMiniDates[21]['dmax'] = '255';
+tabDureeslocMiniDates[22] = [];
+tabDureeslocMiniDates[22]['dd'] = '2025-09-21';
+tabDureeslocMiniDates[22]['df'] = '2026-02-28';
+tabDureeslocMiniDates[22]['dm'] = '1';
+tabDureeslocMiniDates[22]['dmax'] = '255';
+
+	</script>
+	<script type="text/javascript">
+	/* Permet de vérifier si une date peut être sélectionnée ou non comme "date d'arrivée" */
+	function verifierDateFermees(date){
+		// format xxxx-yy-zz
+		var date_sql = date.getFullYear() + '-' + ('0'+(date.getMonth() + 1)).slice(-2) + '-' + ('0'+date.getDate()).slice(-2);
+		
+		if(typeof tab_dates_detail != 'undefined' && tab_dates_detail.hasOwnProperty(date_sql)){
+			var tab_details = tab_dates_detail[date_sql].split('|');
+
+			if($.inArray('available', tab_details)>=0){
+				return [true];
+			} else if($.inArray('unavailable', tab_details)>=0){
+				return [false, 'completACetteDate', 'indisponible à cette date'];
+			} else if($.inArray('no_arrival', tab_details)>=0){
+				return [false, 'no_arrivee_possible', 'Pas d\'arrivée possible ce jour'];
+			}
+		}
+
+		return [true];
+	}
+	/* Permet de vérifier si une date peut être sélectionnée ou non comme "date de départ" */
+	function verifierDatesFermees_2(date){	
+		// on travaille sur une copie de l'objet Date
+		var date_tmp = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+		// On enlève un jour car il faut tester la date précédente (ouverte ou fermée) pour savoir si le jour actuel est disponible comme "date de départ"
+		// Exemple dans $tab_dates_detail : 27: ouvert, 28: fermé
+		// Pour une date de départ, le 28 doit être ouvert
+		date_tmp.setDate(date_tmp.getDate() - 1);
+
+		var date_sql = date_tmp.getFullYear() + '-' + ('0'+(date_tmp.getMonth() + 1)).slice(-2) + '-' + ('0'+date_tmp.getDate()).slice(-2);
+
+		if(typeof tab_dates_detail != 'undefined' && tab_dates_detail.hasOwnProperty(date_sql)){
+			var tab_details = tab_dates_detail[date_sql].split('|');
+			
+			if($.inArray('unavailable', tab_details)>=0){
+				return [false, 'completACetteDate', 'indisponible à cette date'];
+			} else if($.inArray('no_departure', tab_details)>=0){
+				return [false, 'no_arrivee_possible', 'Pas de départ possible ce jour'];
+			}
+		}
+
+		return [true];
+	}
+
+	// Retourne la duree_mini en fonction de la date d'arrivée prévue
+	function get_duree_mini(date){
+		var duree_loc_mini = 1;
+		if(typeof tabDureeslocMiniDates != 'undefined'){
+			for(var i in tabDureeslocMiniDates){
+				if(date >= tabDureeslocMiniDates[i]['dd'] && date <= tabDureeslocMiniDates[i]['df']){
+					duree_loc_mini = tabDureeslocMiniDates[i]['dm'];
+					break;
+				}
+			}
+		}
+		return duree_loc_mini;
+	}
+	// Retourne la duree_maxi en fonction de la date d'arrivée prévue
+	function get_duree_maxi(date){
+		var duree_loc_maxi = 90;
+		if(typeof tabDureeslocMiniDates != 'undefined'){
+			for(var i in tabDureeslocMiniDates){
+				if(date >= tabDureeslocMiniDates[i]['dd'] && date <= tabDureeslocMiniDates[i]['df']){
+					duree_loc_maxi = tabDureeslocMiniDates[i]['dmax'];
+					break;
+				}
+			}
+		}
+		return duree_loc_maxi;
+	}
+	function dateSlashToSql(date){
+		date = date.split('index.html');
+		return date.reverse().join('-');
+	}
+	function dateSqlToSlash(date){
+		date = date.split('-');
+		return date.reverse().join('index.html');
+	}
+
+	var d_tmp = new Date();
+	var nb_jours_restants = (new Date(d_tmp.getFullYear(), d_tmp.getMonth()+1, 0)).getDate() - d_tmp.getDate(); // Nb de jours restants avant la fin du mois
+	var duree_datepicker = '+2Y +'+nb_jours_restants+'D'; // soit environ 25 mois
+
+	$("#arrivee").datepicker({
+		minDate: 0, 
+		maxDate: duree_datepicker, 
+		numberOfMonths: 1,
+		beforeShowDay: verifierDateFermees
+	});
+
+	// $("#date_arrivee").datepicker({
+	// 	minDate: 0, 
+	// 	maxDate: duree_datepicker, 
+	// 	numberOfMonths: 1,
+	// 	beforeShowDay: verifierDateFermees,
+	// 	onSelect: function (date_format) {
+	// 		var obj_date_arrivee = $('#date_arrivee');
+	// 		var obj_date_depart = $('#date_depart');
+	// 		var dt1 = obj_date_arrivee.datepicker('getDate'); // retourne un type 'date'
+	// 		var dt2 = obj_date_depart.datepicker('getDate'); // retourne un type 'date'
+
+	// 		var min_dt2 = new Date(dt1); // copie de l'objet
+	// 		var max_dt2 = new Date(dt1); // copie de l'objet
+	// 		var duree_mini_loc = get_duree_mini(dateSlashToSql(date_format));
+	// 		var duree_maxi_loc = get_duree_maxi(dateSlashToSql(date_format));
+
+	// 		// minDate = dt1 + duree_mini_loc => variable selon chaque annonce, déterminé en fonction de : tabDureeslocMiniDates
+	// 		min_dt2.setDate(min_dt2.getDate() + parseInt(duree_mini_loc));
+	// 		obj_date_depart.datepicker('option', 'minDate', min_dt2);
+
+	// 		if(dt2==null){
+	// 			obj_date_depart.datepicker('setDate', min_dt2);
+	// 		}
+	// 		max_dt2.setDate(max_dt2.getDate() + parseInt(duree_maxi_loc));
+	// 		obj_date_depart.datepicker('option', 'maxDate', max_dt2);
+
+	// 		setTimeout(function(){
+	// 			obj_date_depart.focus();
+	// 		}, 0);
+	// 		// $(this).change();
+	// 	}
+	// });
+	// $("#date_depart").datepicker({
+	// 	minDate: 0, 
+	// 	maxDate: duree_datepicker, 
+	// 	numberOfMonths: 1,
+	// 	beforeShowDay: verifierDatesFermees_2
+	// });
+
+	function check_form_resa(){
+		if ($("#date_arrivee").val().length == 0 || $("#date_depart").val().length == 0){
+			alert('Les dates d\'arrivée et de départ sont obligatoires !');
+		}else{
+			$("#form_resa").submit();
+		}
+	}
+
+	// Menu
+	function openMenu() {
+		$('#btn_menu, .menu_site').addClass('open');
+	}
+	function closeMenu() {
+		$('#btn_menu, .menu_site').removeClass('open');
+	}
+	$('#btn_menu').click(function(){
+		if($('.menu_site').hasClass('open')){
+			closeMenu();
+		} else {
+			openMenu();
+		}
+	});
+
+	// Bloc "langues"
+	function openLang() {
+		$('.bloc_flags').addClass('open');
+	}
+	function closeLang() {
+		$('.bloc_flags').removeClass('open');
+	}
+
+	$('span.conteneur_flag').click(function(){
+		if($('.bloc_flags').hasClass('open')){
+			closeLang();
+		} else {
+			openLang();
+		}
+	});
+
+	$(document).on('mouseup touchend', function(e){
+		var btn_menu = $('#btn_menu');
+		var menu_site = $('.menu_site');
+		if(!btn_menu.is(e.target) && btn_menu.has(e.target).length === 0 && !menu_site.is(e.target) && menu_site.has(e.target).length === 0){
+			closeMenu();
+		}
+
+		var btn_lang = $('span.conteneur_flag');
+		var bloc_lang = $('.bloc_flags');
+		if(!btn_lang.is(e.target) && btn_lang.has(e.target).length === 0 && !bloc_lang.is(e.target) && bloc_lang.has(e.target).length === 0){
+			closeLang();
+		}
+
+		var btn_partage = $('.bloc-partage .bloc-visible');
+		var bloc_partage = $('.bloc-partage .togglePartage');
+		if(!btn_partage.is(e.target) && btn_partage.has(e.target).length === 0 && !bloc_partage.is(e.target) && bloc_partage.has(e.target).length === 0){
+			bloc_partage.removeClass('togglePartage_disp');
+		}
+	});
+
+	// Plugin jQuery qui permet de savoir si un élément est visible ou non => retourne le nb de pixels visibles à l'écran
+	;(function($, win) {
+		$.fn.inViewport = function(cb) {
+			return this.each(function(i,el){
+				function visPx(){
+					var H = $(this).height(),
+					r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+					return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));  
+				} visPx();
+				$(win).on("resize scroll", visPx);
+			});
+		};
+	}(jQuery, window));
+
+	// Tous les éléments qui ont un attribut data-animation="" seront animés dès qu'ils seront visibles dans le viewport
+	$('[data-animation]').inViewport(function(px){
+		if(px){
+			$(this).addClass($(this).data('animation'));
+		}
+	});
+
+	function openWindow(url, name, largeur, hauteur){
+		var largeurEcran = (screen.width - largeur) / 2;
+		var hauteurEcran = ((screen.height - hauteur) / 2)-60;
+
+		newwindow = window.open(url, name, 'width=' + largeur + ', height=' + hauteur + ', top=' + hauteurEcran + ', left=' + largeurEcran);
+		if (window.focus) {
+			newwindow.focus();
+		}
+	}
+
+	/* 
+	Cette fonction permet de copier du texte. 
+
+	Restrictions : 
+	- Accepte uniquement un nodeHtml ou un id (type string : 'id-1')
+	- La copie ne peut se faire que si l'élément à copier est visible (donc impossible de faire fonctionner avec type=hidden, display:none)
+	- copie seulement le contenu d'un input OU d'un textarea
+
+	retourne un booléen indiquant si le lien a été copié ou non
+	*/
+	function copyToClipboard(elem) {
+		if(typeof (elem) == 'string'){
+			elem = $('#' + elem)[0]; // recherche d'un élément portant cet id
+		}
+		if(!elem){
+			return false;
+		}
+		var isInput = elem.tagName == "INPUT" || elem.tagName == "TEXTAREA";
+		var origSelectionStart, origSelectionEnd;
+		if (isInput) {
+			// can just use the original source element for the selection and copy
+			target = elem;
+			origSelectionStart = elem.selectionStart;
+			origSelectionEnd = elem.selectionEnd;
+		} else {
+			console.log('Le Node Html n\'est ni un input, ni un textarea. Impossible de copier');
+			return false;
+		}
+		// save original focus
+		var currentFocus = document.activeElement;
+		// select the content
+		target.focus();
+		target.setSelectionRange(0, target.value.length);
+
+		// copy the selection
+		var succeed;
+		try {
+			succeed = document.execCommand("copy");
+		} catch(e) {
+			succeed = false;
+		}
+		// restore original focus
+		if (currentFocus && typeof currentFocus.focus === "function") {
+			currentFocus.focus();
+		}
+		// restore prior selection
+		elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+		return succeed;
+	}
+
+	// idem fonction "copyToClipboard". Cependant, celle-ci permet de copier le texte d'un élément div, span, p, etc...
+	function copyToClipboard_all(elem) {
+		if(typeof (elem) == 'string'){
+			elem = document.getElementById(elem); // recherche de l'élément portant cet id
+		}
+		var textarea = document.createElement('textarea');
+		textarea.id = 'temp_element';
+		textarea.style.height = 0;
+		document.body.appendChild(textarea);
+		textarea.value = elem.innerText;
+		var selector = document.querySelector('#temp_element');
+		selector.select();
+		var succeed;
+		try {
+			succeed = document.execCommand('copy');
+		} catch(e) {
+			succeed = false;
+		}
+		document.body.removeChild(textarea);
+		return succeed;
+	}
+
+
+	var legendeDateFermee = 'indisponible à cette date';
+	var dico = {
+		'pas_resa_jour_j': 'Pas de réservation pour le jour même',
+		'pas_resa_veille': 'Pas de réservation la veille du jour d\'arrivée',
+		'pas_resa_x_jours_avant_arrivee': 'Pas de réservation à moins de {{nb}} jours avant l\'arrivée',
+		'pas_resa_au_dela_x_mois': 'Pas de réservation au delà de {{nb}}',
+		'pas_arrivee_ce_jour': 'Pas d\'arrivée possible ce jour',
+		'pas_depart_ce_jour': 'Pas de départ possible ce jour',
+		'nuits': 'nuits',
+	};
+
+	// Initialisation des datepickers
+	var tab_datepickers = [];
+	
+	var id_dp1 = 'date_arrivee';
+	var id_dp2 = 'date_depart';
+
+	if(id_dp1 != '' && id_dp2 != '' && typeof Litepicker != 'undefined'){
+		var d_tmp = new Date();
+		var min_date = '2024-09-03';
+		var max_date = '2025-12-31';
+		
+		tab_datepickers[id_dp1+'_dbl_fiche'] = new Litepicker({ 
+			element: document.getElementById(id_dp1),
+			elementEnd: document.getElementById(id_dp2),
+			format: 'DD/MM/YYYY',
+			lang: 'fr-FR',
+			minDate: min_date,
+			maxDate: max_date,
+			numberOfMonths: 2,
+			numberOfColumns: 2,
+			singleMode: false, // 2 input ?
+			showTooltip: false,
+			selectForward: true,
+			selectBackward: false,
+			// position: 'auto_center',
+			beforeShowDay: (date, date_null, pickedDates) => {
+				// isLocked, class, title
+				var tab_retour = [false, '', ''];
+
+				// Si dp1 (car pickedDates.length==0) ...
+				if(pickedDates.length==0){
+					if(typeof tab_dates_detail != 'undefined'){
+						var date_sql = date.format('YYYY-MM-DD');
+
+						if(date_sql < min_date){
+							tab_retour[0] = false;
+							tab_retour[1] = 'date_passee';
+							tab_retour[2] = '';
+						}
+
+						if(tab_dates_detail.hasOwnProperty(date_sql)){
+							var tab_details = tab_dates_detail[date_sql].split('|');
+
+							if($.inArray('available', tab_details)>=0){
+								// le jour est disponible, on ne change rien
+
+							} else if($.inArray('unavailable', tab_details)>=0){
+								// jour non disponible
+								tab_retour[0] = true;
+								tab_retour[1] = 'completACetteDate';
+								tab_retour[2] = legendeDateFermee;
+
+								// pour raison : trop tard
+								if($.inArray('delai_min_ouv_resa', tab_details)>=0){
+									if(typeof tab_conditions_annonce != 'undefined' && typeof tab_conditions_annonce.delai_min_avant_arrivee != 'undefined'){
+										if(tab_conditions_annonce.delai_min_avant_arrivee == 0){
+											tab_retour[2] = dico['pas_resa_jour_j'];
+										} else if(tab_conditions_annonce.delai_min_avant_arrivee == 1){
+											tab_retour[2] = dico['pas_resa_veille'];
+										} else {
+											tab_retour[2] = dico['pas_resa_x_jours_avant_arrivee'].replace('{{nb}}', tab_conditions_annonce.delai_min_avant_arrivee);
+										}
+									}
+								}
+								// pour raison : trop tôt
+								if($.inArray('delai_max_ouv_resa', tab_details)>=0){
+									if(typeof tab_conditions_annonce != 'undefined' && typeof tab_conditions_annonce.reservable_sur_x_jours != 'undefined'){
+										tab_retour[2] = dico['pas_resa_au_dela_x_mois'].replace('{{nb}}', tab_conditions_annonce.reservable_sur_x_jours.txt_mois);
+									}
+								}
+
+							} else if($.inArray('no_arrival', tab_details)>=0){
+								// pas d'arrivée possible
+								tab_retour[0] = true;
+								tab_retour[1] = 'no_arrivee_possible';
+								tab_retour[2] = dico['pas_arrivee_ce_jour'];
+							}
+						}
+					}
+				}
+				// Si dp2 (car pickedDates.length==1) ...
+				if(pickedDates.length==1){
+					var date_sql = date.format('YYYY-MM-DD');
+
+					var date1_selected = pickedDates[0].format('YYYY-MM-DD');
+					var duree_mini = get_duree_mini(date1_selected);
+					var duree_maxi = get_duree_maxi(date1_selected);
+
+					var date2_mini = new Date(pickedDates[0].getFullYear(), pickedDates[0].getMonth(), pickedDates[0].getDate()+parseInt(duree_mini));
+					var date2_mini_sql = date2_mini.getFullYear() + '-' + ('0'+(date2_mini.getMonth() + 1)).slice(-2) + '-' + ('0'+date2_mini.getDate()).slice(-2);
+
+					var date2_maxi = new Date(pickedDates[0].getFullYear(), pickedDates[0].getMonth(), pickedDates[0].getDate()+parseInt(duree_maxi));
+					var date2_maxi_sql = date2_maxi.getFullYear() + '-' + ('0'+(date2_maxi.getMonth() + 1)).slice(-2) + '-' + ('0'+date2_maxi.getDate()).slice(-2);
+
+					// Il faut interdire la sélection du même jour que le jour1 <=> on oblige la sélection du jour suivant le jour1
+					if(date_sql < date2_mini_sql){
+						tab_retour[0] = true;
+
+					} else if(date_sql > date2_maxi_sql){
+						// Si le jour à afficher est après la date de séjour maxi, on interdit sa sélection
+						tab_retour[0] = true;
+
+					} else {
+						if(typeof tab_dates_detail != 'undefined'){
+							// on travaille sur une copie de l'objet Date
+							var date_tmp = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+							// On enlève un jour car il faut tester la date précédente (ouverte ou fermée) pour savoir si le jour actuel est disponible comme "date de départ"
+							// Exemple dans $tab_dates_detail : 27: ouvert, 28: fermé
+							// Pour une date de départ, le 28 doit être ouvert
+							date_tmp.setDate(date_tmp.getDate() - 1);
+							var date_sql_prev = date_tmp.getFullYear() + '-' + ('0'+(date_tmp.getMonth() + 1)).slice(-2) + '-' + ('0'+date_tmp.getDate()).slice(-2);
+
+							if(tab_dates_detail.hasOwnProperty(date_sql_prev)){
+								var tab_details = tab_dates_detail[date_sql_prev].split('|');
+
+								if($.inArray('unavailable', tab_details)>=0){
+									tab_retour[0] = true;
+									tab_retour[1] = 'completACetteDate';
+									tab_retour[2] = legendeDateFermee;
+
+								} else if($.inArray('no_departure', tab_details)>=0){
+									tab_retour[0] = true;
+									tab_retour[1] = 'no_arrivee_possible';
+									tab_retour[2] = dico['pas_depart_ce_jour'];
+								}
+							}
+						}
+					}
+				}
+
+				return tab_retour;
+			},
+			setup: (picker) => {
+				picker.on('selected', (date1, date2) => {
+					// les dates ont été sélectionnées, on va envoyer un événement cyb:dates-selected
+
+					var date_hidden_1 = $(picker.options.element).data('date_hidden');
+					var date_hidden_2 = $(picker.options.elementEnd).data('date_hidden');
+
+					if(date_hidden_1!='' && date_hidden_2!=''){
+						// On stocke les paramètres au format DD/MM/YYYY
+						$(date_hidden_1).val(date1.format('DD/MM/YYYY'));
+						$(date_hidden_2).val(date2.format('DD/MM/YYYY'));
+					}
+
+					const event = new CustomEvent('cyb:dates-selected');
+					picker.options.element.dispatchEvent(event);
+				}); 
+
+				picker.on('show', (el) => {
+					// A l'affichage du datepicker, on met le focus sur le dp1
+					var elem = el;
+					if(picker.options.element.value == ''){
+						elem = picker.options.element;
+					}
+					elem.classList.add('dp_focus');
+				});
+				picker.on('preselect', (date1, date2) => {
+					// Si on vient de sélectionner la date1, on change le focus sur le dp2
+					if(date1 != null && date2 == null){
+						picker.options.element.classList.remove('dp_focus');
+						picker.options.elementEnd.classList.add('dp_focus');
+
+						// et on affiche la date sélectionnée dans le dp1
+						picker.options.element.value = date1.format(picker.options.format);
+						picker.options.elementEnd.value = '';
+
+						// S'il y a une durée minimum de séjour, on l'applique sur dp2
+						var date1_selected = date1.format('YYYY-MM-DD');
+						var duree_mini = get_duree_mini(date1_selected);
+						if(duree_mini >= 2){
+							var date2_preselect = new Date(date1.getFullYear(), date1.getMonth(), date1.getDate()+parseInt(duree_mini));
+							var date2_preselect_sql = date2_preselect.getFullYear() + '-' + ('0'+(date2_preselect.getMonth() + 1)).slice(-2) + '-' + ('0'+date2_preselect.getDate()).slice(-2);
+							var date2_preselect_slash = ('0'+date2_preselect.getDate()).slice(-2) + '/' + ('0'+(date2_preselect.getMonth() + 1)).slice(-2) + '/' + date2_preselect.getFullYear();
+							picker.options.elementEnd.value = date2_preselect_slash;
+
+							// Styles par défaut (en bas du datepicker)
+							var styles = 'background: #fff;padding: 0 10px 10px 10px;border-bottom-left-radius: 3px;border-bottom-right-radius: 3px;font-size: 1.1em;font-weight: bold;';
+							var html_fleche = '';
+
+							// On veut centrer le nb_nuits minimum au dessus de la case cliquée
+							var date1_time = date1.getTime();
+							var day_clicked = document.querySelector('.day-item[data-time="'+date1_time+'"]');
+
+							// recherche de l'élément ".litepicker" parent
+							var elem = day_clicked;
+							var litepicker_parent = null;
+							while(elem.parentNode != null){
+								elem = elem.parentNode;
+								if(elem.classList.contains('litepicker')){
+									litepicker_parent = elem;
+									break;
+								}
+							}
+
+							if(litepicker_parent != null){
+								var parentPos = litepicker_parent.getBoundingClientRect();
+								var childPos = day_clicked.getBoundingClientRect();
+								var largeur_bulle = 112; // la bulle fait 112 de large maxi
+								var taille_fleche = 5;
+
+								// flèche centrée par défaut
+								html_fleche = '<div style="position: absolute;bottom: -'+taille_fleche+'px;left: calc(50% - '+taille_fleche+'px);width: '+(taille_fleche*2)+'px;height: '+(taille_fleche*2)+'px;background: #fff;transform: rotate(45deg);"></div>';
+
+								var relativePos = {};
+								relativePos.top = parseInt(childPos.top - parentPos.top),
+								relativePos.right = parseInt(childPos.right - parentPos.right),
+								relativePos.bottom = parseInt(childPos.bottom - parentPos.bottom),
+								relativePos.left = parseInt(childPos.left - parentPos.left);
+
+								var middle_cell = relativePos.left + (childPos.width / 2);
+								var left = middle_cell - (largeur_bulle / 2);
+
+								var top = 'top: '+(relativePos.top - 30 - taille_fleche)+'px;';
+								var left_right = 'left: '+left+'px;';
+								if(left <= childPos.width){
+									left_right = 'left: 5px;';
+									html_fleche = ''; // trop près du bord, pas de flèche
+								}
+								if((left+largeur_bulle) >= (parentPos.width - childPos.width)){
+									left_right = 'right: 5px;';
+									html_fleche = ''; // trop près du bord, pas de flèche
+								}
+
+								styles = 'background: #fff;font-size: 1.1em;position: absolute;'+top+left_right+'box-shadow: 1px 1px 5px #999;border-radius: 3px;padding: 5px;';
+							}
+							
+							// on affiche le texte "X nuits minimum"
+							if($('.litepicker .infos_suppl_dp').length == 0){
+								$('.litepicker').append('<div class="infos_suppl_dp" style="'+styles+'"></div>');
+							}
+							$('.litepicker .infos_suppl_dp').html(duree_mini+' '+dico['nuits']+' minimum' + html_fleche);
+							
+						} else {
+							$('.litepicker .infos_suppl_dp').remove();
+						}
+
+						const event = new CustomEvent('cyb:dates-pre-selected');
+						picker.options.element.dispatchEvent(event);
+					}
+				});
+				picker.on('hide', () => {
+					// A la fermeture du datepicker, on enlève les focus
+					picker.options.element.classList.remove('dp_focus');
+					picker.options.elementEnd.classList.remove('dp_focus');
+
+					const event = new CustomEvent('cyb:litepicker-hidden');
+					picker.options.element.dispatchEvent(event);
+				});
+			},
+		});
+	}
+
+	// Si on est sur un petit écran, les datepickers afficheront un seul mois (au lieu de deux)
+	window.addEventListener('load', function(){
+		if(typeof tab_datepickers != 'undefined' && window.innerWidth <= 1024){
+			let tab_noms_dp = Object.keys(tab_datepickers);
+			for(var i in tab_noms_dp){
+				tab_datepickers[tab_noms_dp[i]].setOptions({numberOfMonths: 1, numberOfColumns: 1});
+			}
+		}
+	});
+</script>
+	<script type="text/javascript">
+	var input = $("#telephone"), output = $("#tel_format"), outputiso = $("#iso_tel_format");
+	$("#iso_tel_format").parent().append('<input id="dial_code" name="dial_code" type="hidden">'); // Contiendra l'indicatif du pays
+	var elem_dialcode = $('#dial_code');
+
+	var countryCode = input.intlTelInput("getSelectedCountryData").iso2;
+	outputiso.val(countryCode);
+	var dialCode = input.intlTelInput("getSelectedCountryData").dialCode;
+	elem_dialcode.val(dialCode);
+
+	$("#telephone").intlTelInput({
+		defaultCountry: "fr",
+		nationalMode: true,
+		utilsScript: "https://www.cybevasion.fr/javascript/libphonenumber.js",
+		preferredCountries: [ "fr", "be", "ch", "gb", "de", "es", "it", "nl", "lu", "us", "ca" ]
+	});
+	input.change(function() {
+		countryCode = input.intlTelInput("getSelectedCountryData").iso2; // màj du nom iso du pays
+		outputiso.val(countryCode);
+
+		dialCode = input.intlTelInput("getSelectedCountryData").dialCode; // màj de l'indicatif du pays
+		elem_dialcode.val(dialCode);
+
+		check_numero_tel();
+	});
+	$('.country-list > .country').click(function() { // si chgmt de pays (drapeau), rechargement des infos
+		setTimeout(function(){
+			var intlNumber = input.intlTelInput("getCleanNumber");
+			if (intlNumber) {
+				output.val(intlNumber);
+			} else {
+				output.val("");
+			}
+			check_numero_tel();
+		}, 500);
+	});
+	input.keyup(function() {
+		var intlNumber = input.intlTelInput("getCleanNumber");
+		if (intlNumber) {
+			output.val(intlNumber);
+		} else {
+			output.val("");
+		}
+	});
+	function check_numero_tel(){
+		if(input.intlTelInput("isValidNumber")){
+			input.removeClass('error_input');
+			input.addClass('valid_input');
+		} else {
+			input.removeClass('valid_input');
+			input.addClass('error_input');
+		}
+		if(input.val() == ''){
+			input.removeClass('error_input');
+			input.removeClass('valid_input');
+		}
+	}
+	</script>
+	<style type="text/css">
+		#telephone {
+			box-sizing: border-box;
+			width: 100%;
+			padding-top: 7px;
+			padding-bottom: 7px;
+		}
+		
+		/* Dates ouvertes/fermées datepicker */
+		.ui-widget-header {
+			background: linear-gradient(to bottom, #43b4e5 0%,#419ee5 100%);
+		}
+		.completACetteDate > span {
+			background: #ef4836 !important;
+			color: #000 !important;
+		}
+		.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {background: #c8f7c5;color: #004E88;}	</style>
+
+	<script type="text/javascript">
+	var adulte = 'adulto';
+	var adultes = 'adultos';
+	var enfant = 'niño';
+	var enfants = 'niños';
+	var max_nb_personnes_form_contact = 2;
+
+	$('#nb_personnes_text').click(function (){
+		$('#nb_personnes_toggle').toggle();
+		maj_nb_adultes_enfants();
+	});
+
+	// Génération du code HTML permettant de selectionner l'âge des enfants (moteur de dispos)
+	function create_html_age_enfants(html_select_age){
+		$('.age_enfant').remove(); // On suppr tous les <select>
+
+		for(var i=1; i<=$('#nb_enfants').val(); i++){
+			$('#ages_enfants').append(html_select_age); // On crée tous les <select>
+		}
+	}
+
+	// Met à jour l'input #nb_personnes en fonction de #nb_adultes et #nb_enfants
+	function maj_nb_personnes_adultes_enfants(){
+		$('#nb_personnes').val(parseInt($('#nb_adultes').val()) + parseInt($('#nb_enfants').val()));
+	}
+
+	// Génération du code HTML permettant de selectionner l'âge des enfants (moteur de dispos)
+	function maj_moteur_nb_enfants(html_select_age){
+		$('.age_enfant').remove(); // On suppr tous les <select>
+
+		for(var i=1; i<=$('#nb_enfants').val(); i++){
+			$('#ages_enfants').append(html_select_age); // On créé le bon nombre de <select>
+		}
+	}
+	// Met à jour l'input #nb_personnes et l'affichage '{x} adultes, {y} enfants'
+	function maj_nb_adultes_enfants(){
+		var nb_adultes = parseInt($('#nb_adultes').val());
+		var nb_enfants = parseInt($('#nb_enfants').val());
+
+		$('#nb_personnes').val(nb_adultes + nb_enfants);
+		$('#nb_personnes').change(); // event
+
+		var text = '';
+		if(nb_adultes == 1){
+			text += nb_adultes + ' ' + adulte;
+		} else {
+			text += nb_adultes + ' ' + adultes;
+		}
+		if(nb_enfants == 0){
+			// text += ', pas d\'enfants';
+		} else if(nb_enfants == 1){
+			text += ', ' + nb_enfants + ' ' + enfant;
+		} else {
+			text += ', ' + nb_enfants + ' ' + enfants;
+		}
+
+		$('#nb_personnes_text').val(text);
+
+		if(typeof max_nb_personnes_form_contact != 'undefined'){
+			$('#nb_adultes option').each(function(){
+				if($(this).prop('selected')){
+					return;
+				}
+				var nb_tmp = parseInt(nb_enfants) + parseInt($(this).val());
+				if(nb_tmp <= max_nb_personnes_form_contact){
+					$(this).removeAttr('disabled').removeClass('disabled');
+				} else {
+					$(this).attr('disabled', 'disabled').addClass('disabled');
+				}
+			});
+			$('#nb_enfants option').each(function(){
+				if($(this).prop('selected')){
+					return;
+				}
+				var nb_tmp = parseInt(nb_adultes) + parseInt($(this).val());
+				if(nb_tmp <= max_nb_personnes_form_contact){
+					$(this).removeAttr('disabled').removeClass('disabled');
+				} else {
+					$(this).attr('disabled', 'disabled').addClass('disabled');
+				}
+			});
+		}
+	}
+
+	// mouseup touchend
+	$(document).on('mouseup touchend', function(e){
+		var nb_personnes_text = $('#nb_personnes_text');
+		var nb_personnes_toggle = $('#nb_personnes_toggle');
+		if(!nb_personnes_text.is(e.target) && nb_personnes_text.has(e.target).length === 0 && !nb_personnes_toggle.is(e.target) && nb_personnes_toggle.has(e.target).length === 0){
+			nb_personnes_toggle.hide();
+		}
+	});
+	</script>
+</body>
+
+<!-- Mirrored from www.auxgitesdemaelle.com/contact_55850_es.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 11:35:09 GMT -->
+</html>

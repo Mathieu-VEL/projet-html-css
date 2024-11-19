@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.auxgitesdemaelle.com/plan_52547.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 11:34:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="content-language" content="fr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gite C&ocirc;te Mer aux Gites de Ma&euml;lle Gu&eacute;rande, Presqu&#039;ile de Gu&eacute;rande - Plan</title>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta property="og:site_name" content="Auxgitesdemaelle.com">
+<meta property="og:type" content="place">
+<meta property="place:location:latitude" content="47.326741">
+<meta property="place:location:longitude" content="-2.437530">
+<meta property="og:url" content="plan_52547.html">
+<meta property="og:title" content="Gite Côte Mer aux Gites de Maëlle">
+<meta property="og:description" content="À 500 mètres des remparts de Guérande dans un environnement verdoyant, cette maison neuve mitoyenne à un autre gîte vous offre tout le confort moderne (lit double 180 cm, lave-linge,...">
+<meta property="og:image" content="../www.cybevasion.fr/gites/france/44/52547_1127_927.jpg">
+
+	<link href="style_color_2f9f8.css?202311171145" rel="stylesheet" type="text/css">
+	<link href="couleur/printf9f8.css?202311171145" rel="stylesheet" media="print">
+	<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?language=fr&key=AIzaSyAcKQvi0V3oC71js_-iUBjUoiBmjygKELk"></script> -->
+	<script type="text/javascript">
+		var lang_gg_maps = 'fr';
+		var gg_maps_api_key = 'AIzaSyAcKQvi0V3oC71js_-iUBjUoiBmjygKELk';
+		var lat_annonce = 47.326741;
+		var lon_annonce = -2.437530;
+	</script>
+	<link rel="stylesheet" type="text/css" href="couleur/leaflet/leaflet.css">
+	<script type="text/javascript" src="couleur/leaflet/leaflet.js"></script>
+	<script src="../www.cybevasion.fr/javascript/gg_maps_init_v4.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	function Gload() {
+		var mapOptions = {
+	zoom: 12,
+	minZoom: 0,
+	maxZoom: 19,
+	center: [47.326741,-2.437530],
+	scrollWheelZoom: false,
+	doubleRightClickZoom: true,
+};
+ma_carte = L.map('map', mapOptions);
+tile_layers = [];
+add_layer_maps = function(layer_name, styles){
+	layer_name = layer_name.toLowerCase();
+	styles = (typeof styles == 'undefined') ? [{ featureType: "poi.business", elementType: "labels", stylers: [{visibility: "off"}] }] : styles;
+	if(typeof styles == 'string'){
+		styles = styles.substring(styles.indexOf('styles:')).trim();
+	}
+	if(typeof tile_layers[layer_name] == 'undefined'){
+		if(layer_name.indexOf('mapbox_gl') != -1){
+			if(typeof layer_mapbox_gl_glob != 'undefined'){
+				load_layer_mapbox_gl(layer_name, true);
+			} else {
+				$.ajax({
+					url: 'https://www.cybevasion.fr/javascript/leaflet/mapbox-gl/mapbox-gl-v1.6.1.js',
+					dataType: "script",
+					cache: true, // Cache autorisé
+					success: function (){
+						$.ajax({
+							url: 'https://www.cybevasion.fr/javascript/leaflet/mapbox-gl/leaflet-mapbox-gl.js',
+							dataType: "script",
+							cache: true, // Cache autorisé
+							success: function (){
+								load_layer_mapbox_gl(layer_name, false);
+							}
+						});
+					}
+				});
+			}
+		}
+		if(layer_name == 'osm'){
+			var url_tiles = '../%7bs%7d.tile.openstreetmap.org/%7bz%7d/%7bx%7d/%7by%7d.png';
+			tile_layers[layer_name] = {
+				nom: 'OSM',
+				layer: L.tileLayer(url_tiles, {
+					attribution: '© contributeurs d\'<a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
+					tileSize: 256
+				})
+			};
+			tile_layers[layer_name].layer.addTo(ma_carte);
+		}
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.open('GET.html', 'https://www.cybevasion.fr/stats_cartes.php?type='+layer_name);
+		xmlhttp.send();
+	} else {
+		tile_layers[layer_name].layer.addTo(ma_carte);
+	}
+};
+load_layer_mapbox_gl = function(layer_name, loaded){
+	var nom_tmp = 'Plan';
+	var style_layer = 'mapbox://styles/cybevasion/cjn1goapy65dj2rsepa1xd4r2';
+	if(layer_name == 'mapbox_gl_satellite'){
+		nom_tmp = 'Satellite';
+		style_layer = 'mapbox://styles/mapbox/satellite-streets-v11';
+	}
+	if(layer_name == 'mapbox_gl_relief'){
+		nom_tmp = 'Relief';
+		style_layer = 'mapbox://styles/mapbox/outdoors-v11';
+	}
+	if(loaded){
+		if(typeof tile_layers[layer_name] == 'undefined'){
+			loaded = false;
+		}
+	}
+	var layer_mapbox_gl = {};
+	if(!loaded){
+		layer_mapbox_gl = L.mapboxGL({
+			accessToken: 'pk.eyJ1IjoiY3liZXZhc2lvbiIsImEiOiJjbTNkcHd0cHMwNWV3Mm1xdG1kd2ViNmZyIn0.jr3Fz44of0KoINJ4nGH7gA',
+			padding: 0,
+			style: style_layer,
+			attribution: '<a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> &copy;, <a href="https://www.mapbox.com/about/maps/" target="_blank">Mapbox</a> &copy;, <a href="https://www.mapbox.com/map-feedback/" target="_blank">Améliorer cette carte</a>',
+		}).addTo(ma_carte);
+		layer_mapbox_gl_glob = layer_mapbox_gl;
+	} else {
+		layer_mapbox_gl = layer_mapbox_gl_glob;
+	}
+	tile_layers[layer_name] = {
+		nom: nom_tmp,
+		layer: layer_mapbox_gl
+	};
+};
+change_carte = function(new_fond_carte){
+	for(var i in tile_layers){
+		if(ma_carte.hasLayer(tile_layers[i].layer)){
+			ma_carte.removeLayer(tile_layers[i].layer);
+		}
+	}
+	add_layer_maps(new_fond_carte);
+};
+var control_tiles = L.control({position: 'topright'});
+control_tiles.onAdd = function (ma_carte) {
+	var div = L.DomUtil.create('div', 'bloc-change-cartes leaflet-bar');
+	div.innerHTML = '';
+	div.innerHTML += '<div class="change-carte" onclick="change_carte(\'osm\');">Plan</div>';
+	div.innerHTML += '<div class="change-carte" onclick="change_carte(\'mapbox_gl_satellite\');">Satellite</div>';
+	return div;
+};
+control_tiles.addTo(ma_carte);
+ma_carte.zoomControl.setPosition('topright');
+L.control.scale({imperial: false}).addTo(ma_carte);
+add_layer_maps('osm');
+
+
+		// var my_position = new google.maps.LatLng(47.326741, -2.437530);
+		var my_position = L.latLng(47.326741, -2.437530);
+		marqueur[0] = createMarker2(ma_carte, my_position, '<b>Gite C&ocirc;te Mer aux Gites de Ma&euml;lle</b><br>26, chemin Thobie<br>44350 Gu&eacute;rande', icon_poly, 0);
+
+		var my_position = L.latLng(47.282541, -2.433118);
+marqueur[1] = L.marker(my_position, {icon: icon_tour[12]}).bindPopup('Gare du Pouliguen').addTo(ma_carte);
+
+var my_position = L.latLng(47.288501, -2.389188);
+marqueur[2] = L.marker(my_position, {icon: icon_tour[12]}).bindPopup('Gare de La Baule Escoublac').addTo(ma_carte);
+
+var my_position = L.latLng(47.277337, -2.427249);
+marqueur[3] = L.marker(my_position, {icon: icon_tour[29]}).bindPopup('Port du Pouliguen').addTo(ma_carte);
+
+var my_position = L.latLng(47.327269, -2.427083);
+marqueur[4] = L.marker(my_position, {icon: icon_tour[6]}).bindPopup('Porte Saint-Michel').addTo(ma_carte);
+
+var my_position = L.latLng(47.327837, -2.426931);
+marqueur[5] = L.marker(my_position, {icon: icon_tour[39]}).bindPopup('Office de Tourisme de Guérande').addTo(ma_carte);
+
+var my_position = L.latLng(47.280659, -2.427936);
+marqueur[6] = L.marker(my_position, {icon: icon_tour[39]}).bindPopup('Office de Tourisme du Pouliguen').addTo(ma_carte);
+
+var my_position = L.latLng(47.328000, -2.426000);
+marqueur[7] = L.marker(my_position, {icon: icon_tour[7]}).bindPopup('Musée du Pays de Guérande').addTo(ma_carte);
+
+var my_position = L.latLng(47.295327, -2.430929);
+marqueur[8] = L.marker(my_position, {icon: icon_tour[7]}).bindPopup('La maison des paludiers').addTo(ma_carte);
+
+var my_position = L.latLng(47.298674, -2.459908);
+marqueur[9] = L.marker(my_position, {icon: icon_tour[24]}).bindPopup('Marais salants de la presqu\'île guérandaise').addTo(ma_carte);
+
+var my_position = L.latLng(47.316672, -2.504368);
+marqueur[10] = L.marker(my_position, {icon: icon_tour[33]}).bindPopup('Plage de La Grande-Falaise').addTo(ma_carte);
+
+var my_position = L.latLng(47.312671, -2.506256);
+marqueur[11] = L.marker(my_position, {icon: icon_tour[33]}).bindPopup('Plage de Pen-Bron').addTo(ma_carte);
+
+var my_position = L.latLng(47.341062, -2.507114);
+marqueur[12] = L.marker(my_position, {icon: icon_tour[33]}).bindPopup('Plage des Bretons').addTo(ma_carte);
+
+var my_position = L.latLng(47.283266, -2.409844);
+marqueur[13] = L.marker(my_position, {icon: icon_tour[16]}).bindPopup('Centre Culturel et de Congrès Atlantia').addTo(ma_carte);
+
+var my_position = L.latLng(47.330730, -2.426004);
+marqueur[14] = L.marker(my_position, {icon: icon_tour[15]}).bindPopup('Ciné Presqu\'île').addTo(ma_carte);
+
+var my_position = L.latLng(47.280838, -2.406109);
+marqueur[15] = L.marker(my_position, {icon: icon_tour[19]}).bindPopup('Thalasso & Spa Barrière La Baule').addTo(ma_carte);
+
+var my_position = L.latLng(47.328559, -2.419532);
+marqueur[16] = L.marker(my_position, {icon: icon_tour[31]}).bindPopup('Bowling de la Presqu\'île').addTo(ma_carte);
+
+var my_position = L.latLng(47.353787, -2.418495);
+marqueur[17] = L.marker(my_position, {icon: icon_tour[5]}).bindPopup('Les Ecuries de Kerdando').addTo(ma_carte);
+
+var my_position = L.latLng(47.365263, -2.452141);
+marqueur[18] = L.marker(my_position, {icon: icon_tour[5]}).bindPopup('Domaine Equestre de Querelo').addTo(ma_carte);
+
+
+	}
+	</script>
+	<script> </script></head>
+<body onLoad="Gload();">
+	<style>.flag_svg, .logo_partage { max-width: 64px; }</style><div class="header_site"><div class="header_site_content"><div id="btn_menu"><span></span><span></span><span></span><span></span></div><div class="bloc_title"><h1 class="zoomOutIn"><a href="accueil_52547.html" title="Accueil">Gite C&ocirc;te Mer aux Gites de Ma&euml;lle</a></h1> <div class="labels"><img src="https://www.cybevasion.fr/lib3/svg/labels/meubletourisme_22.svg" title="Meubl&eacute; de tourisme 2 &eacute;toiles" align="absmiddle" height="32"> <img src="https://www.cybevasion.fr/lib3/svg/labels/gitesfrance_5_5.svg" title="G&icirc;tes de France 3 &eacute;pis" align="absmiddle" height="32"> </div></div><div class="bloc_flags"><span class="conteneur_flag"><img src="https://www.cybevasion.fr/lib3/drapeaux3/fr.svg" title="Fran&ccedil;ais" class="flag_svg"></span><a href="plan_52547_en.html" class="conteneur_flag" rel="alternate" hreflang="en"><img src="https://www.cybevasion.fr/lib3/drapeaux3/en.svg" title="English" class="flag_svg"></a><a href="plan_52547_de.html" class="conteneur_flag" rel="alternate" hreflang="de"><img src="https://www.cybevasion.fr/lib3/drapeaux3/de.svg" title="Deutsch" class="flag_svg"></a><a href="plan_52547_es.html" class="conteneur_flag" rel="alternate" hreflang="es"><img src="https://www.cybevasion.fr/lib3/drapeaux3/es.svg" title="Espa&ntilde;ol" class="flag_svg"></a><a href="plan_52547_it.html" class="conteneur_flag" rel="alternate" hreflang="it"><img src="https://www.cybevasion.fr/lib3/drapeaux3/it.svg" title="Italiano" class="flag_svg"></a><a href="plan_52547_nl.html" class="conteneur_flag" rel="alternate" hreflang="nl"><img src="https://www.cybevasion.fr/lib3/drapeaux3/nl.svg" title="Nederlands" class="flag_svg"></a></div></div></div>	<div class="menu_site">
+	<div class="menu_site_content">
+		<div class="bloc-partage"><div class="bloc-visible" onclick="$('.togglePartage').toggleClass('togglePartage_disp');" style="cursor: pointer;"><svg class="logo_partage" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 32 32" fill="#929292"><path d="M22.09,9.07,10.81,14.71A5,5,0,0,1,11,16a4.74,4.74,0,0,1-.32,1.69l8,4.91A5,5,0,1,1,17.33,26a5.08,5.08,0,0,1,.32-1.7l-8-4.9a5,5,0,1,1,.27-6.47L21.19,7.29A5,5,0,0,1,21,6a5,5,0,1,1,5,5A5,5,0,0,1,22.09,9.07Z"></path></svg><span>Partager</span></div><div class="togglePartage"><div class="listePartage lienPartage"><a href="#" onclick="var r = copyToClipboard_all('lienPage');if(r){var this_ = $(this).find('.btn_copier_lien');this_.html('Lien copié !');setTimeout(function(){$(this_).html('Copier le lien');}, 3000);}return false;"><img src="couleur/lib/link.svg" width="32" style="height: 100%;"><span id="lienPage" style="display: none;">https://www.auxgitesdemaelle.com/plan_52547.html</span><span class="btn_copier_lien">Copier le lien</span></a></div><div class="listePartage lienPartage"><a href="cdn-cgi/l/email-protection.html#407f342f7d663335222a2523347d072934256572700365037365027434256572700d2532657270213538657270072934253365727024256572700d216503736501022c2c2566222f24397d072934256572700365037365027434256572700d2532657270213538657270072934253365727024256572700d216503736501022c2c2565700465700128343430336573016572066572063737376e213538272934253324252d21252c2c256e232f2d657206302c212e1f75727574776e28342d2c657004657001"><svg class="logos_partage" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="5 957 90 90" fill="#929292"><path d="m 16,974.36218 c -3.32401,0 -6,2.67599 -6,6 l 0,44.00002 c 0,3.324 2.67599,6 6,6 l 68,0 c 3.32401,0 6,-2.676 6,-6 l 0,-44.00002 c 0,-3.32401 -2.67599,-6 -6,-6 l -68,0 z m 4.75,8.96875 a 2.0002,2.0002 0 0 1 1.65625,0.59375 l 24.75,24.28132 c 1.54842,1.5195 4.07236,1.5198 5.625,0 l 24.8125,-24.28132 a 2.0002,2.0002 0 1 1 2.8125,2.84375 l -16.21875,15.90627 16.1875,15.2188 a 2.0005492,2.0005492 0 0 1 -2.75,2.9062 l -16.28125,-15.3437 -5.75,5.625 c -3.09988,3.0343 -8.15184,3.0403 -11.25,0 l -5.6875,-5.5938 -16.28125,15.3125 a 2.0005492,2.0005492 0 0 1 -2.75,-2.9062 l 16.15625,-15.2188 -16.1875,-15.90626 a 2.0002,2.0002 0 0 1 1.15625,-3.4375 z"></path></svg><span>Partager par e-mail</span></a></div><div class="listePartage lienPartage"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.auxgitesdemaelle.com%2Fplan_52547.html" onclick="javascript:openWindow(this.href, '', 600, 600); return false;"><img src="couleur/lib/facebook.svg" style="width: 32px;" alt="Partager sur Facebook"/><span>Partager sur Facebook</span></a></div></div></div>		<div class="menu">
+		<a class="item_menu" href="accueil_52547.html">Accueil</a><a class="item_menu" href="photos_52547.html">Photos</a><a class="item_menu" href="tarifs_52547.html">Logement, Tarifs & Planning</a><a class="item_menu menu_selected" href="plan_52547.html">Plan</a><a class="item_menu" href="contact_52547.html">Contact</a><a class="item_menu" href="livredor_52547.html">Avis</a><a class="item_menu menu_back_index" href="index.html">Autres logements</a>
+		</div>	</div>
+</div>	<div class="body_site">
+
+	<div class="body_site_content text">
+
+	<div class="bloc_data">
+		<h2 class="nom_annonce_plan">Gite C&ocirc;te Mer aux Gites de Ma&euml;lle &agrave; Gu&eacute;rande</h2>
+		<div>26, chemin Thobie<br>44350 GU&Eacute;RANDE<br>
+</div>
+		<br>
+		GPS : 47.32674, -2.43753
+
+		<div id="scroll_div" style="position:relative; left:0px; top:0px; z-index:99;">
+			<div id="map" style="overflow:hidden; width: 100%; height: 500px" class="bordure_dashed"></div>
+		</div>
+
+		<div class="div_noimprim" style="text-align: right;">
+			<a href="javascript:print();">
+				<img src="couleur/lib/gfx/print.png" border="0" align="absmiddle" style="margin-right: 5px;">Imprimer le plan d'accès
+			</a>
+		</div>
+		
+		<br>
+		<div align="justify"></div>
+
+		<br><b>Activités à proximité</b><br>
+<div>
+<div class="div-list-25">Mer / Océan : 7 km</div><div class="div-list-25">Baignade : 7 km</div><div class="div-list-25">Canoë-kayak : 7 km</div><div class="div-list-25">Forêt : 7 km</div><div class="div-list-25">Piscine : 2.5 km</div><div class="div-list-25">Golf : 10 km</div><div class="div-list-25">Équitation : 5 km</div><div class="div-list-25">Pêche : 6 km</div></div><br><b>Accès</b><br>
+<div>
+<div class="div-list-25">Aéroport : 80 km</div></div><br><b>Services</b><br>
+<div>
+<div class="div-list-25">Marché : 600 m</div></div><br><b>À découvrir</b><br>
+<div>
+<div class="div-list-25">Porte Saint-Michel : 800 m</div><div class="div-list-25">Office de Tourisme de Guérande : 800 m</div><div class="div-list-25">Musée du Pays de Guérande : 900 m</div><div class="div-list-25">Ciné Presqu'île : 1.0 km</div><div class="div-list-25">Bowling de la Presqu'île : 1.4 km</div><div class="div-list-25">Les Ecuries de Kerdando : 3.3 km</div><div class="div-list-25">La maison des paludiers : 3.5 km</div><div class="div-list-25">Marais salants de la presqu'île guérandaise : 3.6 km</div><div class="div-list-25">Domaine Equestre de Querelo : 4.4 km</div><div class="div-list-25">Gare du Pouliguen : 4.9 km</div><div class="div-list-25">Plage de La Grande-Falaise : 5.2 km</div><div class="div-list-25">Office de Tourisme du Pouliguen : 5.2 km</div><div class="div-list-25">Centre Culturel et de Congrès Atlantia : 5.3 km</div><div class="div-list-25">Plage de Pen-Bron : 5.4 km</div><div class="div-list-25">Plage des Bretons : 5.5 km</div><div class="div-list-25">Port du Pouliguen : 5.6 km</div><div class="div-list-25">Gare de La Baule Escoublac : 5.6 km</div><div class="div-list-25">Thalasso & Spa Barrière La Baule : 5.6 km</div></div><br><b>Villes proches</b><br>
+<div>
+<div class="div-list-25">La Baule : 6 km</div><div class="div-list-25">La Turballe : 6 km</div><div class="div-list-25">Mesquer : 9 km</div><div class="div-list-25">Piriac : 10 km</div><div class="div-list-25">Pornichet : 13 km</div></div>
+
+		<input id="end_iti" type="hidden" value="47.326741,-2.437530">
+		<br>
+		<b class="titre">Calculez votre itinéraire</b>
+		<br>
+		Votre point de départ <input type="text" id="start_iti" value="" size="30"> <input name="my_iti_button" type="button" value="Go !" onclick="calcIti();">
+		<div id="directionsPanel"></div>
+	</div>
+
+	</div>	</div>	<div class="footer_site">
+	<div class="footer_site_content">
+		<div class="footer">
+			Site internet réalisé par <a href="https://www.cybevasion.fr/contact.html" target="_blank">Cybevasion.fr</a><span class="not_mobile_block"> - </span><a href="mentions-legales_55850.html">Mentions légales</a>
+		</div>
+	</div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="../www.cybevasion.fr/jquery/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../www.cybevasion.fr/jquery/jquery.qtip.css">
+<link rel="stylesheet" type="text/css" href="../www.cybevasion.fr/jquery/jquery.swipebox.css">
+
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery.extensions.js"></script>
+<script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery.ui.datepicker-fr.js"></script>
+<script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery.swipebox.js"></script>
+<script type="text/javascript" src="../www.cybevasion.fr/jquery/jquery-event-swipe.js"></script>
+
+<script type="text/javascript" src="../www.cybevasion.fr/javascript/cookiechoices7254.js?202105041646"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function(event) {
+	cookieChoices.showCookieConsentBar('En naviguant sur notre site, vous acceptez l\'utilisation de cookies pour nous permettre de réaliser des analyses et vous proposer des contenus adaptés à vos centres d\'intérêts.', 'ACCEPTER', 'PARAMETRER', 'cookies.html');
+});
+</script>
+
+<script>
+$('[title!=""]').qtip({
+	position: {
+		viewport: $(window),
+		target: 'mouse',
+		adjust: { mouse: true, x: 15, y: 15 }
+	},
+	style: { classes: 'qtip-light qtip-shadow', tip: {corner: false} }
+});
+
+$(function() {
+	$("#arrivee").datepicker({minDate: 0, maxDate: "+1Y +30D", numberOfMonths: 1});
+});
+
+/* Retourne le nb d'éléments d'un tableau associatif */
+function count(array){
+    var c = 0;
+    for(var i in array){
+        if(array[i] != 'undefined'){
+            c++;
+		}
+	}
+	return c;
+}
+
+$(document).ready(function(e) {
+	$('.swipebox').swipebox({hideBarsDelay : 0, useSVG : false});
+});
+</script>
+
+<script type="text/javascript">
+	/* Permet de vérifier si une date peut être sélectionnée ou non comme "date d'arrivée" */
+	function verifierDateFermees(date){
+		// format xxxx-yy-zz
+		var date_sql = date.getFullYear() + '-' + ('0'+(date.getMonth() + 1)).slice(-2) + '-' + ('0'+date.getDate()).slice(-2);
+		
+		if(typeof tab_dates_detail != 'undefined' && tab_dates_detail.hasOwnProperty(date_sql)){
+			var tab_details = tab_dates_detail[date_sql].split('|');
+
+			if($.inArray('available', tab_details)>=0){
+				return [true];
+			} else if($.inArray('unavailable', tab_details)>=0){
+				return [false, 'completACetteDate', 'indisponible à cette date'];
+			} else if($.inArray('no_arrival', tab_details)>=0){
+				return [false, 'no_arrivee_possible', 'Pas d\'arrivée possible ce jour'];
+			}
+		}
+
+		return [true];
+	}
+	/* Permet de vérifier si une date peut être sélectionnée ou non comme "date de départ" */
+	function verifierDatesFermees_2(date){	
+		// on travaille sur une copie de l'objet Date
+		var date_tmp = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+		// On enlève un jour car il faut tester la date précédente (ouverte ou fermée) pour savoir si le jour actuel est disponible comme "date de départ"
+		// Exemple dans $tab_dates_detail : 27: ouvert, 28: fermé
+		// Pour une date de départ, le 28 doit être ouvert
+		date_tmp.setDate(date_tmp.getDate() - 1);
+
+		var date_sql = date_tmp.getFullYear() + '-' + ('0'+(date_tmp.getMonth() + 1)).slice(-2) + '-' + ('0'+date_tmp.getDate()).slice(-2);
+
+		if(typeof tab_dates_detail != 'undefined' && tab_dates_detail.hasOwnProperty(date_sql)){
+			var tab_details = tab_dates_detail[date_sql].split('|');
+			
+			if($.inArray('unavailable', tab_details)>=0){
+				return [false, 'completACetteDate', 'indisponible à cette date'];
+			} else if($.inArray('no_departure', tab_details)>=0){
+				return [false, 'no_arrivee_possible', 'Pas de départ possible ce jour'];
+			}
+		}
+
+		return [true];
+	}
+
+	// Retourne la duree_mini en fonction de la date d'arrivée prévue
+	function get_duree_mini(date){
+		var duree_loc_mini = 1;
+		if(typeof tabDureeslocMiniDates != 'undefined'){
+			for(var i in tabDureeslocMiniDates){
+				if(date >= tabDureeslocMiniDates[i]['dd'] && date <= tabDureeslocMiniDates[i]['df']){
+					duree_loc_mini = tabDureeslocMiniDates[i]['dm'];
+					break;
+				}
+			}
+		}
+		return duree_loc_mini;
+	}
+	// Retourne la duree_maxi en fonction de la date d'arrivée prévue
+	function get_duree_maxi(date){
+		var duree_loc_maxi = 90;
+		if(typeof tabDureeslocMiniDates != 'undefined'){
+			for(var i in tabDureeslocMiniDates){
+				if(date >= tabDureeslocMiniDates[i]['dd'] && date <= tabDureeslocMiniDates[i]['df']){
+					duree_loc_maxi = tabDureeslocMiniDates[i]['dmax'];
+					break;
+				}
+			}
+		}
+		return duree_loc_maxi;
+	}
+	function dateSlashToSql(date){
+		date = date.split('index.html');
+		return date.reverse().join('-');
+	}
+	function dateSqlToSlash(date){
+		date = date.split('-');
+		return date.reverse().join('index.html');
+	}
+
+	var d_tmp = new Date();
+	var nb_jours_restants = (new Date(d_tmp.getFullYear(), d_tmp.getMonth()+1, 0)).getDate() - d_tmp.getDate(); // Nb de jours restants avant la fin du mois
+	var duree_datepicker = '+2Y +'+nb_jours_restants+'D'; // soit environ 25 mois
+
+	$("#arrivee").datepicker({
+		minDate: 0, 
+		maxDate: duree_datepicker, 
+		numberOfMonths: 1,
+		beforeShowDay: verifierDateFermees
+	});
+
+	// $("#date_arrivee").datepicker({
+	// 	minDate: 0, 
+	// 	maxDate: duree_datepicker, 
+	// 	numberOfMonths: 1,
+	// 	beforeShowDay: verifierDateFermees,
+	// 	onSelect: function (date_format) {
+	// 		var obj_date_arrivee = $('#date_arrivee');
+	// 		var obj_date_depart = $('#date_depart');
+	// 		var dt1 = obj_date_arrivee.datepicker('getDate'); // retourne un type 'date'
+	// 		var dt2 = obj_date_depart.datepicker('getDate'); // retourne un type 'date'
+
+	// 		var min_dt2 = new Date(dt1); // copie de l'objet
+	// 		var max_dt2 = new Date(dt1); // copie de l'objet
+	// 		var duree_mini_loc = get_duree_mini(dateSlashToSql(date_format));
+	// 		var duree_maxi_loc = get_duree_maxi(dateSlashToSql(date_format));
+
+	// 		// minDate = dt1 + duree_mini_loc => variable selon chaque annonce, déterminé en fonction de : tabDureeslocMiniDates
+	// 		min_dt2.setDate(min_dt2.getDate() + parseInt(duree_mini_loc));
+	// 		obj_date_depart.datepicker('option', 'minDate', min_dt2);
+
+	// 		if(dt2==null){
+	// 			obj_date_depart.datepicker('setDate', min_dt2);
+	// 		}
+	// 		max_dt2.setDate(max_dt2.getDate() + parseInt(duree_maxi_loc));
+	// 		obj_date_depart.datepicker('option', 'maxDate', max_dt2);
+
+	// 		setTimeout(function(){
+	// 			obj_date_depart.focus();
+	// 		}, 0);
+	// 		// $(this).change();
+	// 	}
+	// });
+	// $("#date_depart").datepicker({
+	// 	minDate: 0, 
+	// 	maxDate: duree_datepicker, 
+	// 	numberOfMonths: 1,
+	// 	beforeShowDay: verifierDatesFermees_2
+	// });
+
+	function check_form_resa(){
+		if ($("#date_arrivee").val().length == 0 || $("#date_depart").val().length == 0){
+			alert('Les dates d\'arrivée et de départ sont obligatoires !');
+		}else{
+			$("#form_resa").submit();
+		}
+	}
+
+	// Menu
+	function openMenu() {
+		$('#btn_menu, .menu_site').addClass('open');
+	}
+	function closeMenu() {
+		$('#btn_menu, .menu_site').removeClass('open');
+	}
+	$('#btn_menu').click(function(){
+		if($('.menu_site').hasClass('open')){
+			closeMenu();
+		} else {
+			openMenu();
+		}
+	});
+
+	// Bloc "langues"
+	function openLang() {
+		$('.bloc_flags').addClass('open');
+	}
+	function closeLang() {
+		$('.bloc_flags').removeClass('open');
+	}
+
+	$('span.conteneur_flag').click(function(){
+		if($('.bloc_flags').hasClass('open')){
+			closeLang();
+		} else {
+			openLang();
+		}
+	});
+
+	$(document).on('mouseup touchend', function(e){
+		var btn_menu = $('#btn_menu');
+		var menu_site = $('.menu_site');
+		if(!btn_menu.is(e.target) && btn_menu.has(e.target).length === 0 && !menu_site.is(e.target) && menu_site.has(e.target).length === 0){
+			closeMenu();
+		}
+
+		var btn_lang = $('span.conteneur_flag');
+		var bloc_lang = $('.bloc_flags');
+		if(!btn_lang.is(e.target) && btn_lang.has(e.target).length === 0 && !bloc_lang.is(e.target) && bloc_lang.has(e.target).length === 0){
+			closeLang();
+		}
+
+		var btn_partage = $('.bloc-partage .bloc-visible');
+		var bloc_partage = $('.bloc-partage .togglePartage');
+		if(!btn_partage.is(e.target) && btn_partage.has(e.target).length === 0 && !bloc_partage.is(e.target) && bloc_partage.has(e.target).length === 0){
+			bloc_partage.removeClass('togglePartage_disp');
+		}
+	});
+
+	// Plugin jQuery qui permet de savoir si un élément est visible ou non => retourne le nb de pixels visibles à l'écran
+	;(function($, win) {
+		$.fn.inViewport = function(cb) {
+			return this.each(function(i,el){
+				function visPx(){
+					var H = $(this).height(),
+					r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+					return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));  
+				} visPx();
+				$(win).on("resize scroll", visPx);
+			});
+		};
+	}(jQuery, window));
+
+	// Tous les éléments qui ont un attribut data-animation="" seront animés dès qu'ils seront visibles dans le viewport
+	$('[data-animation]').inViewport(function(px){
+		if(px){
+			$(this).addClass($(this).data('animation'));
+		}
+	});
+
+	function openWindow(url, name, largeur, hauteur){
+		var largeurEcran = (screen.width - largeur) / 2;
+		var hauteurEcran = ((screen.height - hauteur) / 2)-60;
+
+		newwindow = window.open(url, name, 'width=' + largeur + ', height=' + hauteur + ', top=' + hauteurEcran + ', left=' + largeurEcran);
+		if (window.focus) {
+			newwindow.focus();
+		}
+	}
+
+	/* 
+	Cette fonction permet de copier du texte. 
+
+	Restrictions : 
+	- Accepte uniquement un nodeHtml ou un id (type string : 'id-1')
+	- La copie ne peut se faire que si l'élément à copier est visible (donc impossible de faire fonctionner avec type=hidden, display:none)
+	- copie seulement le contenu d'un input OU d'un textarea
+
+	retourne un booléen indiquant si le lien a été copié ou non
+	*/
+	function copyToClipboard(elem) {
+		if(typeof (elem) == 'string'){
+			elem = $('#' + elem)[0]; // recherche d'un élément portant cet id
+		}
+		if(!elem){
+			return false;
+		}
+		var isInput = elem.tagName == "INPUT" || elem.tagName == "TEXTAREA";
+		var origSelectionStart, origSelectionEnd;
+		if (isInput) {
+			// can just use the original source element for the selection and copy
+			target = elem;
+			origSelectionStart = elem.selectionStart;
+			origSelectionEnd = elem.selectionEnd;
+		} else {
+			console.log('Le Node Html n\'est ni un input, ni un textarea. Impossible de copier');
+			return false;
+		}
+		// save original focus
+		var currentFocus = document.activeElement;
+		// select the content
+		target.focus();
+		target.setSelectionRange(0, target.value.length);
+
+		// copy the selection
+		var succeed;
+		try {
+			succeed = document.execCommand("copy");
+		} catch(e) {
+			succeed = false;
+		}
+		// restore original focus
+		if (currentFocus && typeof currentFocus.focus === "function") {
+			currentFocus.focus();
+		}
+		// restore prior selection
+		elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+		return succeed;
+	}
+
+	// idem fonction "copyToClipboard". Cependant, celle-ci permet de copier le texte d'un élément div, span, p, etc...
+	function copyToClipboard_all(elem) {
+		if(typeof (elem) == 'string'){
+			elem = document.getElementById(elem); // recherche de l'élément portant cet id
+		}
+		var textarea = document.createElement('textarea');
+		textarea.id = 'temp_element';
+		textarea.style.height = 0;
+		document.body.appendChild(textarea);
+		textarea.value = elem.innerText;
+		var selector = document.querySelector('#temp_element');
+		selector.select();
+		var succeed;
+		try {
+			succeed = document.execCommand('copy');
+		} catch(e) {
+			succeed = false;
+		}
+		document.body.removeChild(textarea);
+		return succeed;
+	}
+
+
+	var legendeDateFermee = 'indisponible à cette date';
+	var dico = {
+		'pas_resa_jour_j': 'Pas de réservation pour le jour même',
+		'pas_resa_veille': 'Pas de réservation la veille du jour d\'arrivée',
+		'pas_resa_x_jours_avant_arrivee': 'Pas de réservation à moins de {{nb}} jours avant l\'arrivée',
+		'pas_resa_au_dela_x_mois': 'Pas de réservation au delà de {{nb}}',
+		'pas_arrivee_ce_jour': 'Pas d\'arrivée possible ce jour',
+		'pas_depart_ce_jour': 'Pas de départ possible ce jour',
+		'nuits': 'nuits',
+	};
+
+	// Initialisation des datepickers
+	var tab_datepickers = [];
+	
+	var id_dp1 = 'date_arrivee';
+	var id_dp2 = 'date_depart';
+
+	if(id_dp1 != '' && id_dp2 != '' && typeof Litepicker != 'undefined'){
+		var d_tmp = new Date();
+		var min_date = '2024-09-03';
+		var max_date = '2025-12-31';
+		
+		tab_datepickers[id_dp1+'_dbl_fiche'] = new Litepicker({ 
+			element: document.getElementById(id_dp1),
+			elementEnd: document.getElementById(id_dp2),
+			format: 'DD/MM/YYYY',
+			lang: 'fr-FR',
+			minDate: min_date,
+			maxDate: max_date,
+			numberOfMonths: 2,
+			numberOfColumns: 2,
+			singleMode: false, // 2 input ?
+			showTooltip: false,
+			selectForward: true,
+			selectBackward: false,
+			// position: 'auto_center',
+			beforeShowDay: (date, date_null, pickedDates) => {
+				// isLocked, class, title
+				var tab_retour = [false, '', ''];
+
+				// Si dp1 (car pickedDates.length==0) ...
+				if(pickedDates.length==0){
+					if(typeof tab_dates_detail != 'undefined'){
+						var date_sql = date.format('YYYY-MM-DD');
+
+						if(date_sql < min_date){
+							tab_retour[0] = false;
+							tab_retour[1] = 'date_passee';
+							tab_retour[2] = '';
+						}
+
+						if(tab_dates_detail.hasOwnProperty(date_sql)){
+							var tab_details = tab_dates_detail[date_sql].split('|');
+
+							if($.inArray('available', tab_details)>=0){
+								// le jour est disponible, on ne change rien
+
+							} else if($.inArray('unavailable', tab_details)>=0){
+								// jour non disponible
+								tab_retour[0] = true;
+								tab_retour[1] = 'completACetteDate';
+								tab_retour[2] = legendeDateFermee;
+
+								// pour raison : trop tard
+								if($.inArray('delai_min_ouv_resa', tab_details)>=0){
+									if(typeof tab_conditions_annonce != 'undefined' && typeof tab_conditions_annonce.delai_min_avant_arrivee != 'undefined'){
+										if(tab_conditions_annonce.delai_min_avant_arrivee == 0){
+											tab_retour[2] = dico['pas_resa_jour_j'];
+										} else if(tab_conditions_annonce.delai_min_avant_arrivee == 1){
+											tab_retour[2] = dico['pas_resa_veille'];
+										} else {
+											tab_retour[2] = dico['pas_resa_x_jours_avant_arrivee'].replace('{{nb}}', tab_conditions_annonce.delai_min_avant_arrivee);
+										}
+									}
+								}
+								// pour raison : trop tôt
+								if($.inArray('delai_max_ouv_resa', tab_details)>=0){
+									if(typeof tab_conditions_annonce != 'undefined' && typeof tab_conditions_annonce.reservable_sur_x_jours != 'undefined'){
+										tab_retour[2] = dico['pas_resa_au_dela_x_mois'].replace('{{nb}}', tab_conditions_annonce.reservable_sur_x_jours.txt_mois);
+									}
+								}
+
+							} else if($.inArray('no_arrival', tab_details)>=0){
+								// pas d'arrivée possible
+								tab_retour[0] = true;
+								tab_retour[1] = 'no_arrivee_possible';
+								tab_retour[2] = dico['pas_arrivee_ce_jour'];
+							}
+						}
+					}
+				}
+				// Si dp2 (car pickedDates.length==1) ...
+				if(pickedDates.length==1){
+					var date_sql = date.format('YYYY-MM-DD');
+
+					var date1_selected = pickedDates[0].format('YYYY-MM-DD');
+					var duree_mini = get_duree_mini(date1_selected);
+					var duree_maxi = get_duree_maxi(date1_selected);
+
+					var date2_mini = new Date(pickedDates[0].getFullYear(), pickedDates[0].getMonth(), pickedDates[0].getDate()+parseInt(duree_mini));
+					var date2_mini_sql = date2_mini.getFullYear() + '-' + ('0'+(date2_mini.getMonth() + 1)).slice(-2) + '-' + ('0'+date2_mini.getDate()).slice(-2);
+
+					var date2_maxi = new Date(pickedDates[0].getFullYear(), pickedDates[0].getMonth(), pickedDates[0].getDate()+parseInt(duree_maxi));
+					var date2_maxi_sql = date2_maxi.getFullYear() + '-' + ('0'+(date2_maxi.getMonth() + 1)).slice(-2) + '-' + ('0'+date2_maxi.getDate()).slice(-2);
+
+					// Il faut interdire la sélection du même jour que le jour1 <=> on oblige la sélection du jour suivant le jour1
+					if(date_sql < date2_mini_sql){
+						tab_retour[0] = true;
+
+					} else if(date_sql > date2_maxi_sql){
+						// Si le jour à afficher est après la date de séjour maxi, on interdit sa sélection
+						tab_retour[0] = true;
+
+					} else {
+						if(typeof tab_dates_detail != 'undefined'){
+							// on travaille sur une copie de l'objet Date
+							var date_tmp = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+							// On enlève un jour car il faut tester la date précédente (ouverte ou fermée) pour savoir si le jour actuel est disponible comme "date de départ"
+							// Exemple dans $tab_dates_detail : 27: ouvert, 28: fermé
+							// Pour une date de départ, le 28 doit être ouvert
+							date_tmp.setDate(date_tmp.getDate() - 1);
+							var date_sql_prev = date_tmp.getFullYear() + '-' + ('0'+(date_tmp.getMonth() + 1)).slice(-2) + '-' + ('0'+date_tmp.getDate()).slice(-2);
+
+							if(tab_dates_detail.hasOwnProperty(date_sql_prev)){
+								var tab_details = tab_dates_detail[date_sql_prev].split('|');
+
+								if($.inArray('unavailable', tab_details)>=0){
+									tab_retour[0] = true;
+									tab_retour[1] = 'completACetteDate';
+									tab_retour[2] = legendeDateFermee;
+
+								} else if($.inArray('no_departure', tab_details)>=0){
+									tab_retour[0] = true;
+									tab_retour[1] = 'no_arrivee_possible';
+									tab_retour[2] = dico['pas_depart_ce_jour'];
+								}
+							}
+						}
+					}
+				}
+
+				return tab_retour;
+			},
+			setup: (picker) => {
+				picker.on('selected', (date1, date2) => {
+					// les dates ont été sélectionnées, on va envoyer un événement cyb:dates-selected
+
+					var date_hidden_1 = $(picker.options.element).data('date_hidden');
+					var date_hidden_2 = $(picker.options.elementEnd).data('date_hidden');
+
+					if(date_hidden_1!='' && date_hidden_2!=''){
+						// On stocke les paramètres au format DD/MM/YYYY
+						$(date_hidden_1).val(date1.format('DD/MM/YYYY'));
+						$(date_hidden_2).val(date2.format('DD/MM/YYYY'));
+					}
+
+					const event = new CustomEvent('cyb:dates-selected');
+					picker.options.element.dispatchEvent(event);
+				}); 
+
+				picker.on('show', (el) => {
+					// A l'affichage du datepicker, on met le focus sur le dp1
+					var elem = el;
+					if(picker.options.element.value == ''){
+						elem = picker.options.element;
+					}
+					elem.classList.add('dp_focus');
+				});
+				picker.on('preselect', (date1, date2) => {
+					// Si on vient de sélectionner la date1, on change le focus sur le dp2
+					if(date1 != null && date2 == null){
+						picker.options.element.classList.remove('dp_focus');
+						picker.options.elementEnd.classList.add('dp_focus');
+
+						// et on affiche la date sélectionnée dans le dp1
+						picker.options.element.value = date1.format(picker.options.format);
+						picker.options.elementEnd.value = '';
+
+						// S'il y a une durée minimum de séjour, on l'applique sur dp2
+						var date1_selected = date1.format('YYYY-MM-DD');
+						var duree_mini = get_duree_mini(date1_selected);
+						if(duree_mini >= 2){
+							var date2_preselect = new Date(date1.getFullYear(), date1.getMonth(), date1.getDate()+parseInt(duree_mini));
+							var date2_preselect_sql = date2_preselect.getFullYear() + '-' + ('0'+(date2_preselect.getMonth() + 1)).slice(-2) + '-' + ('0'+date2_preselect.getDate()).slice(-2);
+							var date2_preselect_slash = ('0'+date2_preselect.getDate()).slice(-2) + '/' + ('0'+(date2_preselect.getMonth() + 1)).slice(-2) + '/' + date2_preselect.getFullYear();
+							picker.options.elementEnd.value = date2_preselect_slash;
+
+							// Styles par défaut (en bas du datepicker)
+							var styles = 'background: #fff;padding: 0 10px 10px 10px;border-bottom-left-radius: 3px;border-bottom-right-radius: 3px;font-size: 1.1em;font-weight: bold;';
+							var html_fleche = '';
+
+							// On veut centrer le nb_nuits minimum au dessus de la case cliquée
+							var date1_time = date1.getTime();
+							var day_clicked = document.querySelector('.day-item[data-time="'+date1_time+'"]');
+
+							// recherche de l'élément ".litepicker" parent
+							var elem = day_clicked;
+							var litepicker_parent = null;
+							while(elem.parentNode != null){
+								elem = elem.parentNode;
+								if(elem.classList.contains('litepicker')){
+									litepicker_parent = elem;
+									break;
+								}
+							}
+
+							if(litepicker_parent != null){
+								var parentPos = litepicker_parent.getBoundingClientRect();
+								var childPos = day_clicked.getBoundingClientRect();
+								var largeur_bulle = 112; // la bulle fait 112 de large maxi
+								var taille_fleche = 5;
+
+								// flèche centrée par défaut
+								html_fleche = '<div style="position: absolute;bottom: -'+taille_fleche+'px;left: calc(50% - '+taille_fleche+'px);width: '+(taille_fleche*2)+'px;height: '+(taille_fleche*2)+'px;background: #fff;transform: rotate(45deg);"></div>';
+
+								var relativePos = {};
+								relativePos.top = parseInt(childPos.top - parentPos.top),
+								relativePos.right = parseInt(childPos.right - parentPos.right),
+								relativePos.bottom = parseInt(childPos.bottom - parentPos.bottom),
+								relativePos.left = parseInt(childPos.left - parentPos.left);
+
+								var middle_cell = relativePos.left + (childPos.width / 2);
+								var left = middle_cell - (largeur_bulle / 2);
+
+								var top = 'top: '+(relativePos.top - 30 - taille_fleche)+'px;';
+								var left_right = 'left: '+left+'px;';
+								if(left <= childPos.width){
+									left_right = 'left: 5px;';
+									html_fleche = ''; // trop près du bord, pas de flèche
+								}
+								if((left+largeur_bulle) >= (parentPos.width - childPos.width)){
+									left_right = 'right: 5px;';
+									html_fleche = ''; // trop près du bord, pas de flèche
+								}
+
+								styles = 'background: #fff;font-size: 1.1em;position: absolute;'+top+left_right+'box-shadow: 1px 1px 5px #999;border-radius: 3px;padding: 5px;';
+							}
+							
+							// on affiche le texte "X nuits minimum"
+							if($('.litepicker .infos_suppl_dp').length == 0){
+								$('.litepicker').append('<div class="infos_suppl_dp" style="'+styles+'"></div>');
+							}
+							$('.litepicker .infos_suppl_dp').html(duree_mini+' '+dico['nuits']+' minimum' + html_fleche);
+							
+						} else {
+							$('.litepicker .infos_suppl_dp').remove();
+						}
+
+						const event = new CustomEvent('cyb:dates-pre-selected');
+						picker.options.element.dispatchEvent(event);
+					}
+				});
+				picker.on('hide', () => {
+					// A la fermeture du datepicker, on enlève les focus
+					picker.options.element.classList.remove('dp_focus');
+					picker.options.elementEnd.classList.remove('dp_focus');
+
+					const event = new CustomEvent('cyb:litepicker-hidden');
+					picker.options.element.dispatchEvent(event);
+				});
+			},
+		});
+	}
+
+	// Si on est sur un petit écran, les datepickers afficheront un seul mois (au lieu de deux)
+	window.addEventListener('load', function(){
+		if(typeof tab_datepickers != 'undefined' && window.innerWidth <= 1024){
+			let tab_noms_dp = Object.keys(tab_datepickers);
+			for(var i in tab_noms_dp){
+				tab_datepickers[tab_noms_dp[i]].setOptions({numberOfMonths: 1, numberOfColumns: 1});
+			}
+		}
+	});
+</script></body>
+
+<!-- Mirrored from www.auxgitesdemaelle.com/plan_52547.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 11:34:57 GMT -->
+</html>

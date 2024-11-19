@@ -1,0 +1,21 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 19 Nov 2024 12:33:45 at https://www.auxgitesdemaelle.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.auxgitesdemaelle.com/ -O1 "C:\Users\kerx29\Documents\projet-html-css" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:34:13	Warning: 	Retry after error -5 (Unable to get server's address: Hôte inconnu. ) at link https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png (from https://www.auxgitesdemaelle.com/)
+12:34:13	Error: 	"Not Found" (404) at link https://www.auxgitesdemaelle.com/GET (from https://www.auxgitesdemaelle.com/)
+12:34:23	Warning: 	Link https://www.auxgitesdemaelle.com/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+12:35:09	Error: 	"Not Found" (404) at link https://www.auxgitesdemaelle.com/mentionslegales_55850_en.html (from https://www.auxgitesdemaelle.com/mentions-legales_55850.html)
+12:35:09	Error: 	"Not Found" (404) at link https://www.auxgitesdemaelle.com/mentionslegales_55850_de.html (from https://www.auxgitesdemaelle.com/mentions-legales_55850.html)
+12:35:09	Error: 	"Not Found" (404) at link https://www.auxgitesdemaelle.com/mentionslegales_55850_es.html (from https://www.auxgitesdemaelle.com/mentions-legales_55850.html)
+12:35:09	Error: 	"Not Found" (404) at link https://www.auxgitesdemaelle.com/mentionslegales_55850_it.html (from https://www.auxgitesdemaelle.com/mentions-legales_55850.html)
+12:35:09	Error: 	"Not Found" (404) at link https://www.auxgitesdemaelle.com/mentionslegales_55850_nl.html (from https://www.auxgitesdemaelle.com/mentions-legales_55850.html)
+12:35:09	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png (from https://www.auxgitesdemaelle.com/)
+12:35:17	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png (from https://www.auxgitesdemaelle.com/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 32 seconds : 286 links scanned, 276 files written (17955012 bytes overall) [13887060 bytes received at 150946 bytes/sec], 9072235 bytes transferred using HTTP compression in 183 files, ratio 23%, 65.2 requests per connection
+(7 errors, 3 warnings, 0 messages)

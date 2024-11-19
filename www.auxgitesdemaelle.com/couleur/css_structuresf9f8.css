@@ -1,0 +1,21 @@
+/* CSS spécial pour les mini-sites */
+/* permet de surcharger le CSS du Cyb-fr (css_structures2.css) pour qu'il soit adapté aux mini-sites */
+
+@import url('../../www.cybevasion.fr/css/css_structures2.css');
+
+.structure {
+	position: relative;
+	margin-bottom: 10px;
+	background-color: #ffffff;
+	padding: 5px;
+	border: 1px solid #faefdd;
+	border-bottom: 1px solid #f0e5d4;
+	text-align: left; 
+}
+.bloc_infos_struct {
+	padding-left: 0;
+}
+.infos_logement, .donnees_sdb, .donnees_wc, .donnees_exterieur, .donnees_chambres, .donnees_cuisine {
+	font-weight: normal;
+	color: inherit;
+}

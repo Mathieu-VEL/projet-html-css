@@ -1,0 +1,26 @@
+*{
+	font-size: 12px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	color: #000000;
+}
+@page {
+	margin: 0;
+}
+body{
+	margin: 0;
+	background: none;
+}
+.header_site, .body_site, .footer_site, a {
+	background: none;
+	color: #000000 !important;
+}
+.header_site h1 a {
+	font-size: 1em;
+}
+#btn_menu, .menu_site, .bloc_flags, .menu_addthis_toolbar, .div_noimprim {
+	display: none;
+}
+.fake_input_button, input[type="button"] {
+	background: #FFFFFF;
+	border: 1px solid #CCCCCC;
+}
